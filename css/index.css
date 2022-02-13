@@ -1,0 +1,328 @@
+/*-----------------------------------產品------------------------------  */
+.products{
+    margin: 0 auto;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.pdc_list {
+    width: 1064px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+
+     /* 深藍綠 */
+     color: #23718A;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.pdc_list ol{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 434px;
+    justify-content: space-between;
+    padding-bottom: 159px;  
+    /* border: 2px solid rgb(237, 241, 5);   */
+}
+
+.pdc_list li{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    /* border: 2px solid rgb(52, 241, 5);   */
+}
+
+
+.pdc_list li + li{
+    /* 價錢 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    /* border: 2px solid rgb(241, 5, 5);   */
+}
+
+
+.pdc_list h1{ 
+    font-size: 18px;
+    line-height: 26px;  
+    letter-spacing: 0.2em;
+    padding-bottom: 25px;  
+    /* border: 2px solid rgb(52, 241, 5); */
+}
+
+
+.pdc_list ol p{
+    width: 380px;
+    margin: 25px 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    /* or 214% */
+    letter-spacing: 0.25em;
+    /* border: 2px solid rgb(52, 241, 5); */
+}
+
+.pdc_list a img{
+    margin-bottom: 19px;
+}
+
+.pdc_list a:last-child{
+    display: block;
+    text-decoration: none;
+    Width:138.99px;
+    Height :47px;
+    background: #042D41;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+
+
+
+
+/*-----------------------------------廣告------------------------------  */
+.index_cm{
+    margin: 0 auto;
+
+    /* border: 1px solid black; */
+}
+
+.index_cm ul{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.index_cm li{
+    /* 淺藍綠 */
+    background-color: rgba(139, 187, 183, .2) ; 
+    
+
+    /* 深靛藍 */
+    color: #042D41;
+    text-align: center;
+}
+
+.index_cm img{
+    /* display: block; */
+    /* width: 960px; */
+}
+
+.index_cm h1{
+    font-size: 18px;
+    line-height: 35px;
+    /* identical to box height */
+    letter-spacing: 0.2em;
+    padding-top: 171px;
+    
+    width: 130px;
+    margin: 0 auto;
+    
+    margin-bottom: 37px ;
+    border-bottom: 0.5px solid #042D41;
+
+}
+
+.index_cm p{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    /* or 214% */
+    margin: 0 233px;
+    text-align: center;
+    letter-spacing: 0.25em;
+}
+
+
+
+/*-----------------------------------最新消息------------------------------  */
+.news{  
+    margin-bottom: 148px;  
+}   
+
+.news h1{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    /* 中藍綠 */
+    color: #31999D;
+
+    margin: 123px 0 52px;
+
+    /* border: 1px solid black; */
+}
+
+.news ol{
+    width: 1064px;
+    height: 50px;
+    background: rgba(139, 187, 183, 0.25);
+
+    margin: 0 auto;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.news li{
+    margin: 0 auto;
+    display: flex;
+    width: 965.85px;
+     /* border: 1px solid black; */
+}
+
+
+.news a{
+    text-decoration: none;
+
+    flex-basis: 80px;
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 300;  
+
+    /* border: 1px solid black; */
+}
+
+.news a:first-child{
+    
+    flex-grow: .5;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 214% */
+    letter-spacing: 0.25em;
+
+    /* 深藍綠 */
+    color: #23718A;
+}
+
+
+.news a:nth-child(2){
+    flex-grow: .4;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 214% */
+    letter-spacing: 0.25em;
+    
+    /* 淺藍綠 */
+    color: #8BBBB7;
+}
+
+.news a:nth-last-child(-n+3){
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 214% */
+    letter-spacing: 0.25em;
+    
+    /* 深靛藍 */
+    color: #042D41;
+}
+
+
+.news a:nth-child(3){
+    flex-grow: 4;
+} 
+
+.news a:nth-last-child(-n+2){
+    flex-grow: 0;
+}
+
+
+
+
+/* ------------------------------IG瀏覽-------------------------------- */
+.ig_main{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    /* width: 1465px; */
+    height: 700px;
+    background: rgba(139, 187, 183, 0.1);
+     /* border: 1px solid rgb(202, 38, 38); */
+}
+
+.ig_main h1{
+    padding: 123px 0 52px 0;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+    color: #31999D;
+}
+
+.ig_list{
+    width: 1265px;
+    margin: 0 auto;
+    display: flex;
+    /* border: 1px solid rgb(202, 38, 38); */
+}
+
+
+.ig_main ul{
+    display: flex;
+    width: 1064px;
+    /* border: 1px solid black; */
+}
+
+.ig_main li{
+    width: 200px;
+    height: 200px;
+    margin-right: 16px;
+}
+
+.ig_main img:first-child{
+    margin-right:  21px;
+    /* border: 1px solid black; */
+}
+
+.ig_main img:last-child{
+    margin-left:  21px;
+    /* border: 1px solid black; */
+}
+
+/* hover */
+.ig_main li:hover{
+    display: block;
+    background-image: url(/img/iggr_3.png) ;
+}
+
+
+
+
+/*---------------------------------- 回頂部 ----------------------------------- */
+#scroll_top img{
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    /* border: 1px solid rgb(139, 38, 38); */
+}
+  
+
+
+
+

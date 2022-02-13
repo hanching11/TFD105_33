@@ -1,0 +1,217 @@
+/*-----------------------------------主選單--------------------------------  */
+.nav li a:nth-child(3){
+    padding-bottom: 10px;
+    border-bottom: 1px solid #042D41;
+}
+
+
+article{
+    background: linear-gradient(345.2deg, #8BBBB7 -27.3%, rgba(155, 222, 217, 0.510559) -27.3%, rgba(139, 187, 183, 0) 59.36%);
+}
+
+
+/*-----------------------------------關於_頂部品牌標語 --------------------------------  */
+.banner{
+   background-image: url(../img/banner_about1920.png);
+   margin: 0 auto;
+}
+
+.banner_text{
+    position: absolute;
+  
+    left: 16%;
+    top: 40%;
+ }
+
+
+.slogan{
+   margin: 0 auto;
+   
+   /* background-image: url(../img/slogan.png); */
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #31999D;
+   /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.slogan h1{  
+   margin: 0 auto;
+   width: 1064px;
+   padding:  105px 0 41px 0 ;
+
+   border-bottom: none;
+    /* 中標題 */
+    text-align: center;
+    font-size: 48px;
+    line-height: 90px;
+    /* identical to box height */
+    letter-spacing: 0.2em;
+    /* 中藍綠 */
+    color: #31999D;  
+   /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.slogan h2{
+
+   /* 小標題 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    /* 中藍綠 */
+    color: #31999D;
+       /* border: 1px solid rgb(8, 31, 163); */
+}
+
+
+
+
+
+
+
+/*------------------------------關於_中間圖文---------------------------  */
+
+.about_main{
+    margin: 0 auto;
+    margin-top: 145px;
+    width: 1440px;
+    
+    
+    /* border: 3px solid rgb(8, 31, 163); */
+}
+
+
+.about_main ul:nth-child(-n+3){
+    position: relative;
+    display: flex;
+    padding-bottom: 140px;
+    
+    /* border: 3px solid rgb(23, 8, 163); */
+}
+
+.about_img1 li{
+    position: absolute;
+    right: 138px;
+    top:221px;
+    /* border: 3px solid rgb(163, 96, 8); */
+}
+
+.about_img2 li{
+    position: absolute;
+    left: 187px;
+    top:136px;
+    float: right;
+    /* border: 3px solid rgb(163, 96, 8); */
+}
+
+.about_img3 li{
+    position: absolute;
+    right: 156px;
+    top:142px;
+    /* border: 3px solid rgb(163, 96, 8); */
+}
+
+
+.about_img2 img{
+    display: flex;
+    margin-left: auto;
+    /* border: 3px solid rgb(163, 96, 8); */
+}
+
+.about_main h1{
+    margin-left: auto;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 93px;
+    /* identical to box height */
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+    color: #31999D;
+    /* border: 3px solid rgb(57, 163, 8); */
+}
+
+
+.about_main p{
+    margin-top: 11px;
+   /* 小標題 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+    color: #31999D;
+    /* border: 3px solid rgb(21, 163, 8); */
+}
+
+/* ------------------------------關於_品牌認證 -------------------------------- */
+
+
+.about_icon ol{
+    width: 1064px;
+    margin: 0 auto;
+    padding-bottom: 177px;
+    align-items: center;
+    
+    /* border: 3px solid rgb(21, 163, 8); */
+}
+
+
+.about_icon li{
+    display: flex;
+    
+   text-align: center;
+   align-items:flex-end;
+   
+   justify-content: space-around;
+    /* border: 3px solid rgb(122, 211, 114); */
+}
+
+
+.about_main h2{
+    width: 200px;
+    /* border: 3px solid rgb(211, 141, 114); */
+}
+
+
+.about_icon h2{
+    margin-bottom: 34px;
+
+    /* 內文中標題 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height */
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+    color: #31999D;
+    /* border: 3px solid rgb(211, 201, 114); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

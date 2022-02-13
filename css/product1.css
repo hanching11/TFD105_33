@@ -1,0 +1,684 @@
+/*-----------------------------------主選單--------------------------------  */
+.nav li a:first-child{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #042D41;
+}
+
+/*-----------------------------------麵包屑------------------------------  */
+.filter{
+    display: flex;
+    width: 1064px;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: 0 auto 85px;
+    padding-top: 40px  ;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.filter li{
+    /* 未選中的篩選列 */
+    flex-grow: .02;
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+
+.filter li:last-child{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    
+    text-align: center;
+    letter-spacing: 0.2em;
+    /* border: 1px solid rgb(196, 16, 16); */
+}
+
+.filter .fal{
+    color: #23718A;
+    /* border: 2px solid rgb(245, 230, 17); */
+}
+
+.filter a, .filter{
+    text-decoration: none;
+     /* 淺藍綠 */
+     color: #8BBBB7;
+     /* border: 1px solid rgb(8, 31, 163); */
+}
+
+
+
+/*-----------------------------------個別產品-------------------------------  */
+.products{
+    margin: 0 auto;
+    margin-top: 130px;
+    /* display: flex; */
+   
+    /* 淺藍綠垂直漸層 */
+    background: linear-gradient(326.59deg, rgba(155, 222, 217, 0.2) 19.87%, rgba(155, 222, 217, 0) 168.81%);
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.product03 {
+    width: 1064px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.pdc01_list ol:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    height: 381px;
+    width: 412px;
+    margin-left: 40px;
+    /* border: 1px solid rgb(237, 241, 5);   */
+}
+
+.pdc01_list li:first-child{
+     /* 內文大標題 */
+     font-family: Noto Sans TC;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 35px;
+     /* identical to box height */
+     letter-spacing: 0.2em;
+     /* 深靛藍 */
+     color: #042D41;
+} 
+
+.pdc01_list li{ 
+    flex-basis: 532px;
+   
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    /* border: 2px solid rgb(241, 119, 5);   */
+}
+
+
+.pdc01_list li:nth-child(2){
+    padding-bottom: 70px;
+}
+
+.pdc01_list li:nth-child(3){
+    padding-bottom: 7px;
+}
+
+.pdc01_list li:nth-child(4){
+    padding-bottom: 100px;
+    /* border: 5px solid rgb(136, 12, 12);   */
+}
+
+.pdc01_list li:nth-child(2n+2){
+   /* 內文 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    /* or 214% */
+    letter-spacing: 0.25em;
+
+    /* 深靛藍 */
+    color: #042D41;
+    /* border: 2px solid rgb(241, 5, 5);   */
+}
+
+.pdc01_list li:nth-last-child(2){
+    flex-basis: 147px;
+    display: flex;
+    margin-right: 16px;
+
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    background-color: #fff;
+    /* border: 3px solid rgb(5, 166, 241);   */
+}
+
+
+/* ---------- 增減商品---------- */
+.pdc_add{
+    position: relative;
+    width: 147px;
+    height: 20px;
+   
+    /* border: 3px solid rgb(5, 166, 241);   */
+}
+
+.pdc_add p{ 
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight:50;
+    font-size: 30px;  
+    /* border: 3px solid rgb(5, 166, 241);   */
+}
+
+.pdc_add p:first-child{
+    position: absolute;
+    top: -45px;
+    left: 50px;
+    /* border: 3px solid rgb(38, 77, 95);  */
+}
+
+.pdc_add p:last-child{
+    position: absolute;
+    top: -43px;
+    right: -25px;
+    /* border: 3px solid rgb(38, 77, 95);  */
+}
+
+
+/* ---------- 購物車 ---------- */
+.pdc01_list a:last-child{
+    display: block;
+    text-decoration: none;
+    Width:246.9px;
+    Height:47px;
+    background: #042D41;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+
+
+/* ---------- 左側商品圖+加入收藏 ---------- */
+.pdc_img a:last-child{
+    text-decoration: none;
+    font-family: Noto Sans SC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+
+    padding-left: 10.65px;
+
+    /* 深靛藍 */
+    color: #042D41;
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+
+.pdc_img li{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+
+.pdc_img{
+    margin-bottom: 150px;
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+
+
+/*------------------------------ 產品標語 --------------------------------- */
+.slogan{
+    margin: 0 auto;
+    margin-bottom: 235px;
+    background: none;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.slogan h1{  
+    padding:  172px 0 45px 0 ;
+
+
+    border-bottom: none;
+    /* 小標題 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+
+    color: #31999D;
+
+    
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+
+.slogan h2{
+    margin: 0 auto ;
+    width: fit-content;
+    
+    /* 內文 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    /* or 214% */
+    text-align:center;
+    letter-spacing: 0.25em;
+
+    /* 深藍綠 */
+    color: #23718A;
+    padding-bottom: 15px ;  
+    border-bottom: 0.5px solid #31999D;
+
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+
+
+/* ------------------------------ 成份 ---------------------------------*/
+/* 測試用 */
+ *{
+    /* border 不會被吃掉 */
+    box-sizing: border-box;  
+} 
+
+.benefits{
+    /* padding-top: 235px; */
+    margin: 0 auto;
+     /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.benefits h1{
+    text-align: center;
+    margin-bottom: 52px;
+
+    /* 小標題 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+    color: #31999D;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+
+.benefits ul{
+    width: 1440px;
+    height: 677px;
+    margin: 0 auto;
+
+    display: flex;
+    /* border: 3px solid rgb(8, 31, 163); */
+}
+
+.benefits li{
+    /* background-position: center center; */
+    transition: .5s;
+}
+
+
+.benefits .item1{
+    background-image: url(../img/item1.png);
+    flex-grow: 1;
+}
+
+.benefits .item2{
+    background-image: url(../img/item2.png);
+    flex-grow: 1;
+}
+
+
+.benefits .item3{
+    background-image: url(../img/item3.png);
+    flex-grow: 1;
+}
+
+
+.benefits .item4{
+    background-image: url(../img/item4.png);
+    flex-grow: 1;
+}
+
+.benefits li:hover{
+    flex-grow: 2;
+    /* border: 3px solid rgb(8, 31, 163); */
+}
+
+
+.benefits ul h2{
+    margin: 112px auto 75px;
+    padding-bottom: 44px;
+    width: 180px;
+    text-align: center;
+
+    filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.25));
+    /* 內文大標題 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+
+    border-bottom: 1px solid #FFFFFF;
+    /* border: 3px solid rgb(8, 31, 163); */
+}
+
+.benefits ul p{
+    width: 180px;
+    margin: 0 auto;
+
+    filter: drop-shadow(2px 2px 15px rgba(0, 0, 0, 0.25));
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    /* or 222% */
+    text-align: justify;
+    letter-spacing: 0.2em;
+
+    color: #FFFFFF;
+    /* border: 3px solid rgb(8, 31, 163); */
+}
+
+.benefits .item4 h2{
+    padding-bottom: 9px;
+     /* border: 3px solid rgb(8, 31, 163); */
+}
+
+/*-----------------------------------使用說明------------------------------  */
+.tip{
+    width: 846px;
+    margin: 118px auto 168px;
+    /* border: 3px solid rgb(8, 31, 163); */
+}
+
+.tip h1{
+    text-align: center;
+    /* 小標題 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+    color: #31999D;
+}
+
+.tip li{
+    display: flex;
+    
+    /* border: 3px solid rgb(163, 96, 8); */
+}
+
+.tip li:first-child{
+    margin-bottom: 79px;
+    align-items: center;
+    /* border: 3px solid rgb(163, 96, 8); */
+}
+
+
+
+.tip p{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 299px;
+
+    /* 內文 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    /* or 214% */
+    letter-spacing: 0.25em;
+
+    /* 深藍綠 */
+    color: #23718A;
+    /* border: 3px solid rgb(21, 163, 8); */
+}
+
+
+.tip1 p{
+    height: 72px;
+    margin-top:  100px;
+    /* border: 3px solid rgb(36, 34, 31); */
+}
+
+
+/*-----------------------------------你可能會喜歡------------------------------  */
+.pdc_like{
+    
+    margin: 0 auto;
+
+    /* 淺藍綠垂直漸層 */
+    background: linear-gradient(336.46deg, #8BBBB7 -24.07%, rgba(155, 222, 217, 0.510559) -24.07%, rgba(139, 187, 183, 0) 93.39%);
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.pdc_like h1{
+    padding: 34px 0 54px 0;
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+    color: #31999D;
+}
+
+.pdc_like .gotop{
+    
+    display: flex;
+    
+    margin-left:  1310px;
+    padding-bottom: 38px;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+/*---------------------------------你可能會喜歡之清單----------------------------  */
+.pdc_list {
+    width: 1064px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+
+     /* 深藍綠 */
+     color: #23718A;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.pdc_list ol{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 434px;
+    justify-content: space-between;
+    padding-bottom: 159px;  
+    /* border: 2px solid rgb(237, 241, 5);   */
+}
+
+.pdc_list li{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    /* border: 2px solid rgb(52, 241, 5);   */
+}
+
+
+.pdc_list li + li{
+    /* 價錢 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    /* border: 2px solid rgb(241, 5, 5);   */
+}
+
+
+.pdc_list h1{
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    padding-bottom: 25px;  
+    /* border: 2px solid rgb(52, 241, 5); */
+}
+
+
+.pdc_list ol p{
+    width: 380px;
+    margin: 25px 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    /* or 214% */
+    letter-spacing: 0.25em;
+    /* border: 2px solid rgb(52, 241, 5); */
+}
+
+.pdc_list a img{
+    margin-bottom: 19px;
+}
+
+.pdc_list a:last-child{
+    display: block;
+    text-decoration: none;
+    Width:138.99px;
+    Height :47px;
+    background: #042D41;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+/*---------------------------------你可能會喜歡清單----------------------------  */
+
+
+
+/*---------------------------------- 回頂部 ----------------------------------- */
+.scroll_top img{
+    /* position: fixed; */
+    /* bottom: -95px; */
+    display: block;
+    margin-left: auto;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    /* z-index: 1; */
+    /* border: 1px solid red; */
+  }
+  
+  /* @media (max-width: 576px) {
+    .scroll_top img{
+     
+      width: 4rem;
+      z-index: 10;
+    }
+  } */
+  
+  /* .scroll_top.show img{
+    bottom: 20px;
+  } */
+
+
+
+
+
+/*-----------------------------------頁碼------------------------------  */
+.pages{
+    margin: 0 auto;
+    padding: 187px 0 125px 0;
+    display: flex;
+    width: 150px;
+    
+    justify-content: space-between;
+    /* border: 2px solid rgb(57, 143, 36); */
+
+}
+
+
+.pages li{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    
+
+    /* 淺藍綠 */
+    color: #8BBBB7;
+}
+
+.pages li:first-child{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    
+    /* 深靛藍 */
+    color: #042D41;
+
+    text-align: center;
+
+    width: 15px;
+    border-bottom: 1.5px solid #042D41;
+
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+
+
+/*-----------------------------------頁碼------------------------------  */
+
+
+
+
+
+
+
+/* --------------------------------底部區塊-------------------------------- */
+footer{
+    width: 1277px;
+    margin: 61px auto 0;
+    /* border: 1px solid black; */
+}
+
+
+
+
+
+

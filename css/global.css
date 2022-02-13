@@ -1,0 +1,365 @@
+@import url('./reset.css');
+
+body{
+    font-family: 'Noto Sans TC', 'Noto Sans';
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*-----------------------------------主選單--------------------------------  */
+.top_main{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    height: 100px;
+    
+
+    position: fixed; 
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    /* border: 3px solid black; */
+}
+
+.top{
+    width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    height: 100px;
+    align-items: center;
+   
+    justify-content: space-between;
+    /* padding: 0 80px;    */
+    
+    /* box-shadow: 0px 5px 15px rgba(155, 222, 217, 0.510559); */
+    /* border: 1px solid black; */
+
+}
+
+.top_main:hover{
+    
+    box-shadow: 0px 15px 15px rgba(155, 222, 217, 0.2);
+}
+
+
+.nav{
+    /* margin: 0 auto; */
+    width: 636px; 
+    /* border: 1px solid black; */
+}
+
+
+.top li{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+.top nav, .top .nav2{
+    width: 100px;
+    /* border: 2px solid black; */
+}
+
+/* 頂部logo */
+.logo_top img{
+    /* display: block; */
+    height: 70px;
+    /* border: 2px solid black;    */
+}
+
+/* 中間主選單 */
+.nav a{
+    /* flex-shrink: 1; */
+    text-decoration: none;
+    text-align: center;
+   
+    font-size: 18px;
+    color: #042D41;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    /* border: 2px solid black;    */
+}
+
+
+.nav a:hover{
+    border-bottom: 1px solid #042D41;
+}
+
+
+
+/* 會員&購物車 */
+.nav2 a{
+    text-align: center; 
+    /* border: 2px solid black;   */
+}
+
+
+
+
+
+
+
+/*-----------------------------------頂部品牌標語--------------------------------  */
+*{
+    /* border 不會被吃掉 */
+   box-sizing: border-box;  
+}
+
+
+
+.banner{
+   
+   background-image: url(../img/banner4.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   
+   min-height: 600px;
+   /* background-size: cover; */
+   background-size: 100%;  /* 隨視窗大小變換 */
+   margin: 0 auto;
+   margin-top: 100px;
+   position: relative;
+
+   /* 給banner_text  */
+   font-size: 60px;
+   /* border: 2px solid rgb(8, 31, 163); */
+}
+
+
+.banner_text{
+   position: absolute;
+ 
+   right: 12%;
+   top: 40%;
+
+   /* 中標題 */
+   font-size: .8em;
+   line-height: 1.5em;
+   /* identical to box height */
+
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.2em;
+
+   /* 中藍綠 */
+   text-indent: 10px;
+   color: #31999D;   
+   text-indent: -.5em;
+   /* border: 2px solid rgb(163, 116, 8); */
+}
+
+
+
+
+.slogan{
+    max-width: 100%;
+   height: 457px;
+   background: linear-gradient(185deg, rgba(155, 222, 217, 0.510559) -20.66%, rgba(139, 187, 183, 0) 60%);
+   /* background-repeat: no-repeat; */
+   /* background-size: cover; */
+   color: #31999D;
+   /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.slogan h1{  
+   margin: 0 auto;
+   width: 1064px;
+   padding:  108px 0 ;
+   font-size: 30px;
+   line-height: 60px;
+   text-align: center;
+   letter-spacing: 0.2em;
+   border-bottom: 0.5px solid #31999D;
+   /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.slogan h2{
+   font-size: 30px;
+   line-height: 43px;
+   text-align: center;
+   letter-spacing: 0.2em;
+   padding: 53px ;  
+}
+
+
+
+
+
+/*---------------------------------- 回頂部 ----------------------------------- */
+.scroll_top img{
+    display: block;
+    margin-left: auto;
+    padding-right: 80px;
+    padding-bottom: 50px;
+
+    /* border: 1px solid black; */
+}
+  
+
+
+
+
+/* --------------------------------底部區塊-------------------------------- */
+footer{
+    width: 1277px;
+    margin: 61px auto 0;
+    /* border: 1px solid black; */
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+
+
+/* ---- 社群軟體 ---- */
+footer ul ol:first-child{
+    height: 24px;
+    margin-top: 320.29px;
+    /* border: 2px solid rgb(5, 241, 143); */
+}
+
+footer ol:first-child{
+    display: flex; 
+    /* border: 2px solid rgb(27, 110, 110); */
+}
+
+footer ol:first-child{
+    width: 136px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+
+    /* border: 2px solid rgb(241, 198, 5); */
+}
+
+footer li{
+    flex-grow: 1;
+    display: flex;   
+     /* border: 2px solid rgb(52, 241, 5); */
+}
+
+footer li:nth-child(3){
+    flex-grow: 0;
+    /* border: 2px solid rgb(52, 241, 5); */
+}
+
+/* follow us */
+footer h2:last-child{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-top: 8.04px;
+  
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+    color: #31999D;
+    /* border: 1px solid rgb(5, 88, 241); */
+}
+/* follow us  */
+
+/* ---- 社群軟體 ---- */
+.footer_logo{
+    width: 133px; 
+    position: absolute;
+    /* border: 1px solid rgb(252, 33, 33); */
+}
+
+
+footer h1{
+    padding: 47.21px 0 35px 0;
+   
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    /* identical to box height, or 214% */
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #8BBBB7;
+}
+
+/* ---- 聯絡我們 ---- */
+footer ol h2:first-child{
+    margin-bottom: 39.69px;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+
+    /* 中藍綠 */
+    color: #31999D;
+    
+    /* border: 1px solid rgb(252, 33, 33);    */
+}
+
+footer ol p{
+    text-align: left;
+    margin-bottom:10px;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    color: #31999D;
+      /* border: 1px solid rgb(252, 33, 33); */
+}
+
+footer ol p:before{
+    content: '';
+    display: block;
+    height: 22px;
+    width: 22px;
+    float: left; 
+    margin-right: 19px;
+    
+    background-image: url(../img/Phone.svg);
+     /* border: 1px solid rgb(252, 33, 33); */
+}
+
+footer ol a{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    color: #31999D;
+    text-decoration: none;
+    border-bottom: 1px solid #31999D;
+}
+
+footer ol a:before{
+    content: '';
+    display: block;
+    height: 22px;
+    width: 22px;
+    float: left; 
+    margin-right: 19px;
+    background-image: url(../img/locate.svg);
+    /* border: 1px solid rgb(252, 33, 33); */
+}
+/* ---- 聯絡我們 ---- */
+
+
+

@@ -1,0 +1,245 @@
+article{
+    background: linear-gradient(358.48deg, #8BBBB7 -36.45%, rgba(155, 222, 217, 0.510559) -36.45%, rgba(149, 209, 204, 0) 29.7%, rgba(143, 196, 192, 0) 90.94%, #8BBBB7 142.98%);
+}
+
+/*-----------------------------------主選單--------------------------------  */
+.nav li a:first-child{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #042D41;
+}
+
+
+
+/*-----------------------------------產品------------------------------  */
+.products{
+    margin: 0 auto;
+    margin-top: 100px;
+   
+    /* 淺藍綠垂直漸層 */
+    background: linear-gradient(358.48deg, #8BBBB7 -36.45%, rgba(155, 222, 217, 0.510559) -36.45%, rgba(149, 209, 204, 0) 29.7%, rgba(143, 196, 192, 0) 90.94%, #8BBBB7 142.98%);
+
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+
+/*-----------------------------------篩選器------------------------------  */
+.filter{
+    display: flex;
+    width: 1064px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 71px;
+    padding: 34px 0 12px 0;
+    
+    border-bottom: 0.5px solid #23718A;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.filter li{
+    display: flex;
+    /* height: 100px; */
+    /* border: 1px solid rgb(209, 85, 54); */
+}
+
+.filter li:nth-child(4){
+    flex-grow: .7;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.filter li:nth-last-child(2){
+    flex-grow: 0;
+    /* border: 1px solid rgb(255, 153, 57); */
+}
+
+
+.filter li:nth-last-child(-n+5){
+    /* 未選中的篩選列 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+
+.filter li:nth-last-child(4n+2){
+  
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+    text-align: center;
+    letter-spacing: 0.2em;
+    
+    /* 深藍綠 */
+    color: #23718A;
+    /* border: 1px solid rgb(196, 16, 16); */
+}
+
+
+.filter .faf, .filter .fal{
+    color: #23718A;
+    /* border: 2px solid rgb(245, 230, 17); */
+}
+
+.filter a{
+    text-decoration: none;
+     /* 淺藍綠 */
+     color: #8BBBB7;
+     /* border: 1px solid rgb(8, 31, 163); */
+}
+/*-----------------------------------篩選器------------------------------  */
+
+
+/*-----------------------------------產品清單------------------------------  */
+.pdc_list {
+    width: 1064px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+
+     /* 深藍綠 */
+     color: #23718A;
+    /* border: 1px solid rgb(8, 31, 163); */
+}
+
+.pdc_list ol{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 434px;
+    justify-content: space-between;
+    padding-bottom: 159px;  
+    /* border: 2px solid rgb(237, 241, 5);   */
+}
+
+.pdc_list li{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    /* border: 2px solid rgb(52, 241, 5);   */
+}
+
+
+.pdc_list li + li{
+    /* 價錢 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    /* border: 2px solid rgb(241, 5, 5);   */
+}
+
+
+.pdc_list h1{
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    padding-bottom: 25px;  
+    /* border: 2px solid rgb(52, 241, 5); */
+}
+
+
+.pdc_list ol p{
+    width: 380px;
+    margin: 25px 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    /* or 214% */
+    letter-spacing: 0.25em;
+    /* border: 2px solid rgb(52, 241, 5); */
+}
+
+.pdc_list a img{
+    margin-bottom: 19px;
+}
+
+.pdc_list a:last-child{
+    display: block;
+    text-decoration: none;
+    Width:138.99px;
+    Height :47px;
+    background: #042D41;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+/*-----------------------------------產品清單------------------------------  */
+
+/*-----------------------------------頁碼------------------------------  */
+.pages{
+    margin: 0 auto;
+    padding: 187px 0 125px 0;
+    display: flex;
+    width: 150px;
+    
+    justify-content: space-between;
+    /* border: 2px solid rgb(57, 143, 36); */
+
+}
+
+
+.pages li{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    
+
+    /* 淺藍綠 */
+    color: #8BBBB7;
+}
+
+.pages li:first-child{
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    
+    /* 深靛藍 */
+    color: #042D41;
+
+    text-align: center;
+
+    width: 15px;
+    border-bottom: 1.5px solid #042D41;
+
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+
+
+/*-----------------------------------頁碼------------------------------  */
+
+
+
+
+
+/* --------------------------------底部區塊-------------------------------- */
+footer{
+    width: 1277px;
+    margin: 61px auto 0;
+    /* border: 1px solid black; */
+}
+
+
+
+
+
+

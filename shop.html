@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/shop.css">
+</head>
+<body>
+    <!-- 上方區塊外層延伸到底 -->
+    <!-- 最外層包裝 -->
+    <div class="wrapper">
+
+        <!------------------------------ 主選單 --------------------------------->
+        <header class="top_main">
+            <div class="top">
+                <ul>
+                     <a class="logo_top" href="./index.html"><img src="./img/logo_ori.svg" alt=""></a>
+                </ul>
+               
+                <ul class="nav">
+                    <li>
+                        <a href="product.html">肌膚產品</a>
+                        <a href="#">最新消息</a>
+                        <a href="about.html">關於我們</a>
+                        <a href="question.html">常見Q&A</a>
+                    </li>
+                </ul>
+    
+                <ul class="nav2">
+                    <li>
+                        <a href="shop.html"><img src="./img/shopping_cart.svg" alt=""></a>
+                        <a href="member.html"><img src="./img/perm_identity.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        
+    
+        
+        <!-- ------------------------------ 商品帳單資訊-------------------------------->
+        <div class="shop_listAll">
+            <div class="shop_list_main">
+                <!-- 麵包屑 -->
+                <ul class="filter">
+                    <li><a class="faf" href="product.html">結帳資訊</a></li>
+                    <li>></li>
+                    <li><a href="product.html">收件資訊</a></li>
+                    <li>></li>
+                    <li><a class="fal" href="product.html">付款</a></li>  
+                </ul>
+                <!-- 麵包屑 -->
+    
+                <table class="shop_list_tab">
+                    <tr class="shop_list_title"> 
+                        <td class="list_no">商品名稱</td>
+                        <td class="list_tl">數量</td>
+                        <td>價格</td>
+                        <td>小計</td>
+                    </tr>
+                    <tr class="shop_list">
+                        <td class="list_t1">
+                            <ol>
+                                <a href="#"><img src="./img/del_pdc.svg" alt=""></a>
+                            </ol>
+                            <ol >
+                                <a href="#"><img src="./img/pdc_small.png" alt=""></a>
+                                <a class="like" href="./product.html">
+                                    <img src="./img/love.svg" alt="">
+                                    加入收藏
+                                </a>
+                            </ol>
+                            <ol>
+                                敏感肌精華液
+                            </ol>
+                        </td>
+                         <!-- /* 數量下拉選單 */ -->
+                        <td>     
+                            <select name="product_standard_order_amount" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>                                                
+                            </select>
+                        </td>
+                        <td>$800</td>
+                        <td>$800</td>
+                    </tr>
+
+                    <tr class="shop_list">
+                        <td class="list_t1">
+                            <ol>
+                                <a href="#"><img src="./img/del_pdc.svg" alt=""></a>
+                            </ol>
+                            <ol >
+                                <a href="#"><img src="./img/pdc_small.png" alt=""></a>
+                                <a class="like" href="./product.html">
+                                    <img src="./img/love.svg" alt="">
+                                    加入收藏
+                                </a>
+                            </ol>
+                            <ol>
+                                敏感肌精華液
+                            </ol>
+                        </td>
+                        <!-- /* 數量下拉選單 */ -->
+                        <td>     
+                            <select name="product_standard_order_amount" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>                                                
+                            </select>
+                        </td>
+                        <td>$300</td>
+                        <td>$1700</td>
+                    </tr>
+                    
+                
+
+                    <table class="shop_list_Alltotal">
+                        <tr class="shop_total">
+                            <td>
+                                合計
+                            </td>
+                            <td>
+                                $1700
+                            </td>
+                        </tr>
+                        <tr class="shipping">
+                            <td>
+                                運費
+                            </td>
+                            <td>
+                                $0
+                            </td>   
+                        </tr>
+                       
+                       
+                    </table>
+                    <p>滿$1200，享免運。</p>
+
+                    <ul class="next">
+                        <li>
+                            <a class="add_pdc" href="#">下一步</a>
+                        </li>
+                        <li>1.確認結帳資訊</li>
+                        <li>2.確認收件資訊</li>
+                        <li>3.選擇支付方式</li>
+                    </ul>
+                    
+                </table>
+
+                <!--------------------------------  結帳總計&下一步 -------------------------------->
+                <ul class="sale_all">
+                    <li>
+                        <input class="sale" type="text" placeholder="請輸入優惠碼"/>
+                    </li>
+                    <li>
+                        <input class="re_new" type="submit" value="更新">
+                        <!-- <a class="re_new" href="#">更新</a> -->
+                    </li>
+                </ul>
+               
+                
+            </div>
+
+            <!------------------------------------ 回頂部 ------------------------------------>
+            <a href="#"  class="scroll_top show" id="scroll_top">
+                <img src="./img/go_top.svg" alt="">
+            </a>
+
+
+
+        </div>
+
+        
+
+
+        
+
+        
+       
+            
+        <!--------------------------------底部區塊-------------------------------->
+        <footer>
+            <img class="footer_logo" src="./img/logo.svg" alt="">
+
+            <ul>
+                <ol>
+                    <li>
+                        <img src="./img/Ig.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/Facebook.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="./img/Fb_messenger.svg" alt="">
+                    </li>
+                    <h2>FOLLOW US</h2>
+                    
+                </ol>
+
+                <ol>
+                    <!-- <li>
+                        <img src="./img/Ig.svg" alt="">   
+                    </li>
+                    <li>
+                        聯絡我們
+                    </li>
+                    <li>
+                        02-2543-876
+                    </li>
+                    <li>
+                        台北市中山區南京東路三段219號
+                    </li> -->
+                    
+                    <h2>聯絡我們</h2>
+                    <p>02-2543-876</p>
+                    <a href="https://goo.gl/maps/6kQtExbDrVXf1VUQA">台北市中山區南京東路三段219號</a>
+                </ol>
+                
+                <ol>
+                    <img src="./img/map.svg" alt="">
+                </ol>
+            </ul>
+            <h1>
+            Copyright Coral Beauty All rights reserved.
+            </h1>
+            
+
+        </footer>
+    </div>
+            
+</body>
+</html>
