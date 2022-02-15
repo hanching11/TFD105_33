@@ -280,7 +280,7 @@
 }
 
 .ig_main h1{
-    padding: 123px 0 52px 0;
+    padding: 100px 0 52px 0;
 
     font-family: Noto Sans TC;
     font-style: normal;
@@ -292,6 +292,7 @@
 
     /* 中藍綠 */
     color: #31999D;
+    /* border: 1px solid black; */
 }
 
 
@@ -328,7 +329,8 @@
     );
     opacity: 0;
     transition: .5s;
-  }
+     /* border: 1px solid black; */
+}
 
 .ig:hover i{
     color: #fff;
@@ -377,7 +379,7 @@ opacity: 1;
 
 
 
-/*---------------------------------- 回頂部 ----------------------------------- */
+/*------------------------------ 回頂部 ------------------------------- */
 #scroll_top img{
     position: absolute;
     right: 0;
