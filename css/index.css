@@ -1,10 +1,29 @@
+/* --------------------------------按鈕變色------------------------------ */
+.pdc_list a:last-child:hover{
+    display: block;
+    text-decoration: none;
+    Width:138.99px;
+    Height :47px;
+    background: #9BDED9;
+
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #042D41;
+    /* border: 2px solid rgb(57, 143, 36); */
+}
+
+
 /*-----------------------------------產品------------------------------  */
 .products{
     margin: 0 auto;
     /* border: 1px solid rgb(8, 31, 163); */
 }
 
-.pdc_list {
+.pdc_list{
     width: 1064px;
     margin: 0 auto;
     
@@ -251,7 +270,7 @@
 
 /* ------------------------------IG瀏覽-------------------------------- */
 .ig_main{
-    position: relative;
+    
     width: 100%;
     margin: 0 auto;
     /* width: 1465px; */
@@ -275,85 +294,88 @@
     color: #31999D;
 }
 
-.ig_list{
-    width: 1265px;
-    margin: 0 auto;
-    display: flex;
-    /* border: 1px solid rgb(202, 38, 38); */
-}
-
-
-.ig_main ul{
-    display: flex;
-    width: 1064px;
-    margin: 0 auto;
-    /* border: 1px solid black; */
-    justify-content: space-between;
-}
 
 .ig_main li{
     align-items: center;
     position: relative;
-    /* display: flex;
-    align-items: flex-end; */
     overflow: hidden;
-    /* padding: 1rem; */
-    width: 100%;
     text-align: center;
     color: whitesmoke;
-    background-color: whitesmoke;
     /* border: 1px solid black; */
 }
 
 
 
-/* hover */
-.ig_main a{
-    
-}
-
-.ig_list a:hover:before{
-    content: "";
+.ig i{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none;
-    /* border: 1px solid black; */
-
-}
-
-.ig_list a:hover:after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    box-sizing: border-box;
+    padding: 15% 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 60px;
     background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.009) 11.7%,
-      rgba(0, 0, 0, 0.034) 22.1%,
-      rgba(0, 0, 0, 0.072) 31.2%,
-      rgba(0, 0, 0, 0.123) 39.4%,
-      rgba(0, 0, 0, 0.182) 46.6%,
-      rgba(0, 0, 0, 0.249) 53.1%,
-      rgba(0, 0, 0, 0.32) 58.9%,
-      rgba(0, 0, 0, 0.394) 64.3%,
-      rgba(0, 0, 0, 0.468) 69.3%,
-      rgba(0, 0, 0, 0.54) 74.1%,
-      rgba(0, 0, 0, 0.607) 78.8%,
-      rgba(0, 0, 0, 0.668) 83.6%,
-      rgba(0, 0, 0, 0.721) 88.7%,
-      rgba(0, 0, 0, 0.762) 94.1%,
-      rgba(0, 0, 0, 0.79) 100%
+    /* 淺藍綠漸層 */
+        0deg, #9BDED9 0%,
+        rgba(155, 222, 217, 0) 100%
     );
-    /* border: 1px solid black; */
+    opacity: 0;
+    transition: .5s;
+  }
+
+.ig:hover i{
+    color: #fff;
+    display: flex;
+    opacity: 1;
 }
+
+
+
+
+
+.slider {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.slick-slide {
+margin: 0px 10px;
+}
+
+.slick-slide img {
+width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+color: black;
+}
+
+
+.slick-slide {
+transition: all ease-in-out .3s;
+/* opacity: .2; */
+}
+
+.slick-active {
+opacity: 1;
+}
+
+.slick-current {
+opacity: 1;
+}
+
+
+
+
+
 
 /*---------------------------------- 回頂部 ----------------------------------- */
 #scroll_top img{
@@ -363,6 +385,7 @@
     /* border: 1px solid rgb(139, 38, 38); */
 }
   
+
 
 
 
