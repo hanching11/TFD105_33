@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+  }
+
+  header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    height: 100px;
+
+    position: fixed; 
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    border: 2px solid rgb(137, 95, 221);
+  }
+  header:hover{
+    box-shadow: 0px 15px 15px rgba(155, 222, 217, 0.2);
+  }
+
+
+  nav.out_nav{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 100px;
+    border: 1px solid rgb(184, 233, 26);
+  }
+
+ nav.out_nav li{
+    display: flex;
+    margin-left: auto;
+    border: 1px solid rgb(184, 233, 26);
+  }
+
+  nav a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: #042D41;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+  }
+
+  nav a:hover{
+    border-bottom: 1px solid #042D41;
+  }
+
+
+  nav.out_nav li a{
+    width: 50px;
+    text-align: center;
+    border: 1px solid rgb(184, 233, 26);
+  }
+
+ 
+
+  .logo_top{
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/logo_ori.svg);
+    border: 1px solid rgb(103, 122, 42);
+  }
+
+  
+
+  @media screen and (max-width: 767.98px){
+    header{
+      display: block ;
+      
+    }
+    
+  }
+
+
+
+
+  
+  nav.main_nav{
+   /* margin-left: 100px; */
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+  @media screen and (min-width: 768px){
+   
+
+    nav.main_nav{
+      /* display: block !important; */
+      display: flex !important;
+    
+      align-items: center;
+    }
+    
+    
+    nav.out_nav li{
+      display: flex;
+      /* align-items: center; */
+      position: absolute;
+      top: 50%; 
+      right: 0;
+      transform: translateY(-50%);
+      border: 2px solid red;
+    }
+    
+    
+
+    
+
+
+  }
+  @media screen and (max-width: 767.98px){
+    nav.main_nav{
+      display: flex;
+      /* display: none; */
+    
+    }
+
+    
+  }
+  
+  ul.nav_list{
+    /* width: 1000px; */
+    display: flex;
+    
+    /* justify-content: space-between; */
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 100px;
+    
+    border: 1px solid rgb(34, 0, 255);
+  }
+  
+  /* 行動版時，調整列表樣式 */
+  /* Teacher */
+  @media screen and (max-width: 767.98px){
+    ul.nav_list > li{
+      /* display: block; */
+      /* display: flex; */
+    }
+  }
+
+  /* myself */
+  @media screen and (max-width: 767.98px){
+    ul.nav_list{
+      display: block;
+      /* display: flex; */
+     
+     /* float: right; */
+    }
+  }
+  
+  button.btn_switch{
+    display: none;
+   
+  }
+  /* 行動版時，將按鈕顯示出來 */
+  @media screen and (max-width: 767.98px){
+    button.btn_switch, .out_nav a:nth-child(n+2){
+      display: inline-block;
+      /* float: right; */
+      
+      /* margin-top: 25px;
+      display: block;
+      float: right; */
+      
+      /* margin-left: 0; */
+    
+     
+  
+      /* border: 1px solid rgb(255, 0, 162); */
+      
+    }
+
+    nav.out_nav{
+      display: flex;
+      justify-content: space-between;
+      
+      align-items: center;
+    
+      
+      border: 1px solid rgb(184, 233, 26);
+      
+    }
+
+    nav.out_nav li{
+      display: flex;
+      margin-left: auto;
+    
+      border: 1px solid rgb(184, 233, 26);
+    }
+
+    nav.out_nav li a{
+      width: 50px;
+      text-align: center;
+      border: 1px solid rgb(184, 233, 26);
+    }
+
+    .logo_top{
+      width: 100px;
+      height: 70px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      /* background-size: cover; */
+      background-image: url(../img/logo_ori_noW.svg);
+      border: 1px solid rgb(103, 122, 42);
+    }
+  }
+
+
+
+  
+
+  .logo_top img{
+     
+      border: 1px solid blue;
+    /* position: absolute; */
+  }
+
+
+
+  
+/*-----------------------------------主選單--------------------------------  */
+/*
+.top_main{
+    margin: 300px auto;
+    width: 100%;
+    background-color: #fff;
+    height: 100px;
+    
+
+    position: fixed; 
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    /* border: 3px solid black; */
+}
+
+.top{
+    width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    height: 100px;
+    align-items: center;
+   
+    justify-content: space-between;
+    /* padding: 0 80px;    */
+    
+    /* box-shadow: 0px 5px 15px rgba(155, 222, 217, 0.510559); */
+    /* border: 1px solid black; */
+
+}
+
+.top_main:hover{
+    
+    box-shadow: 0px 15px 15px rgba(155, 222, 217, 0.2);
+}
+
+
+.nav{
+    /* margin: 0 auto; */
+    width: 636px; 
+    /* border: 1px solid black; */
+}
+
+
+.top li{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+.top nav, .top .nav2{
+    width: 100px;
+    /* border: 2px solid black; */
+}
+
+/* 頂部logo */
+.logo_top img{
+    /* display: block; */
+    height: 70px;
+    /* border: 2px solid black;    */
+}
+
+/* 中間主選單 */
+.nav a{
+    /* flex-shrink: 1; */
+    text-decoration: none;
+    text-align: center;
+   
+    font-size: 18px;
+    color: #042D41;
+    letter-spacing: 0.2em;
+    padding-bottom: 10px;
+    /* border: 2px solid black;    */
+}
+
+
+.nav a:hover{
+    border-bottom: 1px solid #042D41;
+} 

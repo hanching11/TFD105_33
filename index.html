@@ -13,14 +13,16 @@
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="./slick/slick.min.js"></script>
 <script src="./js/slick.js"></script>
+
                
         
 <body>
@@ -29,7 +31,7 @@
     <div class="wrapper">
 
         <!------------------------------ 主選單 --------------------------------->
-        <header class="top_main">
+        <!-- <header class="top_main">
             <div class="top">
                 <ul>
                      <a class="logo_top" href="./index.html"><img src="./img/logo_ori.svg" alt=""></a>
@@ -51,13 +53,47 @@
                     </li>
                 </ul>
             </div>
-        </header>
+        </header> -->
+        <header>
+            <nav class="out_nav">
+                <a class="logo_top" href="#"></a>
+                <li>
+                    <a href="shop.html"><img src="./img/shopping_cart.svg" alt=""></a>
+                    <a href="member.html"><img src="./img/perm_identity.svg" alt=""></a>
+                </li>
+    
+                <button type="button" class="btn_switch">
+                    導覽列縮合按鈕
+                </button>
+            </nav>
             
-        <!-- test-->
+            <nav class="main_nav">
+                <ul class="nav_list">
+                    <li><a href="#">肌膚產品</a></li>
+                    <li><a href="#">最新消息</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">常見Q&A</a></li>
+                </ul>
+            </nav>
+        </header>
+      
+            
+        
         <!---------------------------- 頂部品牌圖文 ----------------------------->
-        <div class="banner">
+        <!-- <div class="banner">
             <div class="banner_text">
                 <h1>與你肌膚<br>親近的保養</h1>
+            </div>
+        </div> -->
+
+         <!-- banner測試 -->
+         <div class="bannerTest">
+            <!-- fade css -->
+            <a href="./streetwear.html"></a><div class="myslide img3" style="display: block;">
+              <div class="txt">
+                <h1>與你肌膚<br>親近的保養</h1>
+                <button class="slider-button" type="button" name="button">SHOP NOW</button>
+              </div>
             </div>
         </div>
 
@@ -72,16 +108,7 @@
 
 
 
-        <!-- 測試 -->
-        <div class="bannerTest">
-            <!-- fade css -->
-            <a href="./streetwear.html"></a><div class="myslide img3" style="display: block;">
-              <div class="txt">
-                <h1>與你肌膚<br>親近的保養</h1>
-                <button class="slider-button" type="button" name="button">Shop now</button>
-              </div>
-            </div>
-        </div>
+       
 
         <!-- ------------------------------ 產品-------------------------------->
         <section class="products">
@@ -240,9 +267,9 @@
         
            
             <!------------------------------------ 回頂部 ------------------------------------>
-            <a href="#"  class="scroll_top show" id="scroll_top">
+            <!-- <a href="#"  class="scroll_top show" id="scroll_top">
                 <img src="./img/go_top.svg" alt="">
-            </a>
+            </a> -->
             
         </div>
        
@@ -288,5 +315,12 @@
         </footer>
     </div>
             
+    <script>
+        // 點擊按鈕，選單縮放
+        $("button.btn_switch").on("click", function(){$("nav.main_nav").slideToggle();
+            
+        });
+        
+    </script>
 </body>
 </html>
