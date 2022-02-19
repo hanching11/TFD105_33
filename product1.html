@@ -6,36 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product</title>
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/product1.css">
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <body>
     <!-- 上方區塊外層延伸到底 -->
     <!-- 最外層包裝 -->
     <div class="wrapper">
 
         <!------------------------------ 主選單 --------------------------------->
-        <header class="top_main">
-            <div class="top">
-                <ul>
-                     <a class="logo_top" href="./index.html"><img src="./img/logo_ori.svg" alt=""></a>
+        <header>
+            <nav class="out_nav">
+                <a class="logo_top" href="index.html"></a>
+                <li>
+                    <a href="shop.html"><img src="./img/shopping_cart.svg" alt=""></a>
+                    <a href="member.html"><img src="./img/perm_identity.svg" alt=""></a>
+                </li>
+
+                <button class="hamburger hamburger--collapse is-active" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </nav>
+        
+            
+            <nav class="main_nav">
+                <ul class="nav_list">
+                    <li><a href="product.html">肌膚產品</a></li>
+                    <li><a href="#">最新消息</a></li>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="question.html">常見Q&A</a></li>
                 </ul>
-               
-                <ul class="nav">
-                    <li>
-                        <a href="product.html">肌膚產品</a>
-                        <a href="#">最新消息</a>
-                        <a href="about.html">關於我們</a>
-                        <a href="question.html">常見Q&A</a>
-                    </li>
-                </ul>
-    
-                <ul class="nav2">
-                    <li>
-                        <a href="shop.html"><img src="./img/shopping_cart.svg" alt=""></a>
-                        <a href="member.html"><img src="./img/perm_identity.svg" alt=""></a>
-                    </li>
-                </ul>
-            </div>
+            </nav>
         </header>
             
 
@@ -229,6 +233,6 @@
 
         </footer>
     </div>
-            
+    <script src="./vandors/slick.js"></script>  
 </body>
 </html>
