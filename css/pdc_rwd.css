@@ -1,0 +1,196 @@
+/* @import url('./reset.css'); */
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin: 0;
+        /* border: 5px solid green; */
+        /* height: 200px; */
+      }
+      img{
+        max-width: 100%;
+      }
+      :root{
+        /*font-size: 62.5%;*/ /* 10px */
+
+        --header-height: 60px;
+        --aside-width: 240px;
+      }
+
+      
+  
+      
+      main.product{
+        border: 1px solid blue;
+        /* height: 1000px; */
+        background-color: #FFFFFF;
+        /* width: calc(100% - var(--aside-width)); */
+        /* margin-left: var(--aside-width); */
+
+        /* min-height: calc(100vh - var(--header-height)); */
+
+        padding: 20px;
+      }
+      @media (max-width: 767.98px){
+        main.product{
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+
+      main.product ul.item_list{
+        border: 2px solid red;
+        list-style: none;
+        margin: 0 10%;
+        padding: 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-evenly; */
+      }
+      main.product ul.item_list > li{
+        color: #23718A;
+        
+        width: calc((100% - 60px) / 3);
+        margin: 0 10px;
+        padding: 0 10px;
+        margin-bottom: 100px;
+
+        border: 1px solid green;
+      }
+      
+      main.product ul.item_list > li:nth-child(3n){
+        margin-right: 0;
+      }
+     
+
+      main.product ul.item_list > li > a{
+       
+        display: block;
+        text-decoration: none;
+        Width:140px;
+        Height :50px;
+        background: #042D41;
+    
+        font-family: Noto Sans TC;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+
+        /* border: 2px solid rgb(55, 222, 228); */
+      }
+      main.product ul.item_list > li > a div.img_block{
+        border: 5px solid white;
+        font-size: 0;
+      }
+
+      .item_text a{
+        text-decoration: none;
+        color: #23718A;
+        font-family: Noto Sans TC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+      
+        letter-spacing: 0.2em;
+
+        /* border: 1px solid green; */
+      }
+
+      span.item_text{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 2px solid rgb(165, 92, 92); */
+      }
+      .item_list span + p{
+        margin-bottom: 40px;
+
+        /* 內文 */
+        font-family: Noto Sans TC;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.25em;
+        /* border: 2px solid rgb(93, 92, 165); */
+      }
+
+
+      .item_list span p{
+         /* 價錢 */
+        font-family: Noto Sans TC;
+        font-style: normal;
+        font-weight: 250;
+        font-size: 18px;
+        letter-spacing: 0.2em;
+      }
+
+      @media(max-width: 575.98px){
+        main.product ul.item_list{
+          margin: 0 auto;
+          max-width: 350px;
+          border: 5px solid rgb(93, 92, 165);
+        }
+          main.product ul.item_list li{
+        
+            margin: 0 auto;
+            width: 100%;
+            /* flex-basis: 300px; */
+            margin-bottom: 100px;
+        }
+
+        main.product ul.item_list > li:nth-child(n){
+          margin: 0 auto;
+          margin-bottom: 100px;
+        }
+      }
+
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        main.product ul.item_list{
+          margin: 0 auto;
+          width: 400px;
+          border: 5px solid rgb(93, 92, 165);
+        }
+       
+        main.product ul.item_list li{
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+      }
+     
+    
+      @media (min-width: 768px) and (max-width: 1199.88px){
+        main.product ul.item_list{
+          margin: 0 auto;
+          max-width: 900px;
+          border: 5px solid rgb(165, 160, 92);
+        }
+
+        main.product ul.item_list li{
+          margin: 0 auto;
+         flex-basis: 400px;
+          
+        }
+        main.product ul.item_list > li:nth-child(n){
+          margin: 0 auto;
+          margin-bottom: 100px;
+        }
+      }
+
+
+      @media (min-width:1440px){
+        main.product ul.item_list{
+          margin: 0 auto;
+          max-width: 1000px;
+          border: 5px solid rgb(93, 92, 165);
+        }
+    
+      }

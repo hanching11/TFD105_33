@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .collection-header {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+  width: 100%; }
+  .lt-ie9 .collection-header {
+    display: block; }
+  @media (max-width: 720px) {
+    .collection-header {
+      display: block; } }
+  .collection-header h1, .collection-header .collection-description {
+    color: white;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15); }
+    .lt-ie9 .collection-header h1, .lt-ie9 .collection-header .collection-description {
+      color: inherit;
+      text-shadow: none; }
+    @media (max-width: 720px) {
+      .collection-header h1, .collection-header .collection-description {
+        color: inherit;
+        text-shadow: none; } }
+  .collection-header h1 {
+    margin-top: 0; }
+    .lt-ie9 .collection-header h1 {
+      margin-top: 60px;
+      color:  #000000 ; }
+    @media (max-width: 720px) {
+      .collection-header h1 {
+        margin-top: 60px;
+        color:  #000000 ; } }
+  .collection-header .collection-description {
+    font-family:  Lato, sans-serif ;
+    font-size: 20px;
+    font-weight: normal;
+    -webkit-font-smoothing: initial;
+    -webkit-font-smoothing:  antialiased ; }
+    .lt-ie9 .collection-header .collection-description {
+      color:  #000000 ;
+      font-size: 16px; }
+    @media (max-width: 720px) {
+      .collection-header .collection-description {
+        color:  #000000 ;
+        font-size: 16px; } }
+
+.collection-description {
+  margin-top: 45px; }
+
+.collection-tag-selector {
+  text-align: center;
+  margin-top: 45px; }
+  .collection-tag-selector .select-wrapper {
+    display: inline-block;
+    width: auto;
+    margin: 0; }
+
+.collection-products {
+  font-size: 0;
+  margin: 90px -30px -60px;
+  }
+  .collection-products.products-per-row-3, .collection-products.products-per-row-4 {
+    margin-left: -15px;
+    margin-right: -15px; }
+  @media (max-width: 1020px) {
+    .collection-products {
+      margin-left: -15px;
+      margin-right: -15px; } }
+  @media (max-width: 720px) {
+    .collection-products {
+      margin: 90px 0; } }
+  .collection-has-featured-image .collection-products {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto; }
+    .collection-has-featured-image .collection-products.products-per-row-3, .collection-has-featured-image .collection-products.products-per-row-4 {
+      max-width: 1020px; }
+    @media (max-width: 1020px) {
+      .collection-has-featured-image .collection-products {
+        padding: 0 15px; } }
+    @media (max-width: 720px) {
+      .collection-has-featured-image .collection-products {
+        padding: 0 30px; } }
+
+.product-list-item {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  text-align: center;
+  margin: 0 0 60px;
+  padding: 0 30px;
+  }
+  .products-per-row-3 .product-list-item {
+    width: 33.33%;
+    padding: 0 15px;
+    }
+  .products-per-row-4 .product-list-item {
+    width: 25%;
+    padding: 0 15px; }
+  @media (max-width: 1020px) {
+    .product-list-item {
+      padding: 0 15px; } }
+  @media (max-width: 720px) {
+    .product-list-item {
+      padding: 0 !important;
+      display: block;
+      width: 100% !important;
+      } }
+  .product-list-item h1 {
+    font-size: 16px; }
+    .product-list-item h1 a {
+      color:  #000000 ; }
+
+.product-list-item-thumbnail {
+  position: relative;
+  display: inline-block;
+  max-width: 100%; }
+  .product-list-item-thumbnail img {
+    display: block;
+    margin: 0 auto; }
+
+.stock-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background:  #b0b0f8 ;
+  color:  #ffffff ;
+  display: inline-block;
+  padding: 10px 15px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.sale-badge {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  background:  #b0b0f8 ;
+  color:  #ffffff ;
+  display: block;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 7px 7px 6px 6px;
+  font-family: 'Single Product Webicons Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+.product-list-item-vendor {
+  margin-top: 30px; }
+  .product-list-item-vendor + h1 {
+    margin-top: 20px; }
+
+.product-list-item-price {
+  margin-bottom: 0; }
+  .product-list-item-price .original {
+    text-decoration: line-through;
+    opacity: 0.4;
+    margin-left: 7px; }
+
+.template-index .main-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 0; }
+.template-index .sticky-header ~ .main-content {
+  padding-top: 120px; }
+  @media (max-width: 720px) {
+    .template-index .sticky-header ~ .main-content {
+      padding-top: 0; } }
+.template-index.navigation-below-header .sticky-header ~ .main-content {
+  padding-top: 170px; }
+  @media (max-width: 720px) {
+    .template-index.navigation-below-header .sticky-header ~ .main-content {
+      padding-top: 0; } }
+  .touch .template-index.navigation-below-header .sticky-header ~ .main-content {
+    padding-top: 0; }
+.template-index .sticky-header.full-bleed-slideshow ~ .main-content,
+.template-index .sticky-header.lower-than-slideshow ~ .main-content {
+  padding-top: 0; }
+.template-index .section-title, .template-index footer h4, footer .template-index h4 {
+  margin-bottom: 60px; }
+
+.home-module-wrapper.contrast {
+  background:  #f7f2ff ; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .home-module-wrapper.contrast {
+      background-size: px px ; } }
+
+</style>
+
+<body>
+    <main class="main-content "
+      role="main">
+
+  <script type="text/javascript">
+    window.__shgCurrentCurrencyCode = window.__shgCurrentCurrencyCode || {
+      currency: "USD",
+      currency_symbol: "$",
+      decimal_separator: ".",
+      thousands_separator: ",",
+      decimal_places: 2,
+      currency_symbol_location: "left"
+    };
+  </script>
+
+
+  <h2 class="page-title">All</h2>
+  
+
+
+<div class="collection-products products-per-row-3">
+  
+  <!-- Bold D&H //collection -->
+
+<!-- //end collection D&H -->
+    
+
+
+
+
+<article class="product-list-item tw-relative" id="product-list-item-6655086919798">
+
+  <figure class="product-list-item-thumbnail">
+    <a data-gtm_id="result-6655086919798" href="/collections/all/products/nova-15-vitamin-c-turmeric-brightening-serum">
+      <img src="//cdn.shopify.com/s/files/1/0203/8454/products/Nova_Hero_1600x2000_29e9d27f-3c46-4db2-8d70-974721395991_grande.gif?v=1643064741" alt="NOVA 15% Vitamin C + Turmeric Brightening Serum" />
+    </a>
+
+    
+
+    
+  </figure>
+
+  <!-- Neway dataLayer -->
+  <!-- Build up Array for use with GTM datalayer (snippets/gtm_datalayer_product_inline) -->
+
+<!-- Due to new render variable scope - we need to pull in value of actual output to render the return value - like a function -->
+
+
+
+<script> 
+  (function (gtmCustom) {    
+    try {  
+      gtmCustom.recIndex ++;
+
+      <!-- Render a generic object - using the parameters passed in -->
+
+
+obj = {
+    'name': "NOVA 15% Vitamin C + Turmeric Brightening Serum",
+    'id': 'NOVA-112090',
+
+    'brand': "Herbivore Botanicals",
+    'category': "Facial Care",
+    'variantBarCode': '850026905175',
+    'list': gtmCustom.list_name,
+    'position': gtmCustom.recIndex,
+    'g_product_id': "shopify_US_6655086919798_39567527149686",
+    'generic_object_render': true,
+    
+        'price': 64.00,
+    
+    'variant': ""
+};
+
+
+
+
+      gtmCustom.impressions.push(obj);
+      gtmCustom.productArray["result-6655086919798"] = obj;
+    } catch (err) {      
+      console.log(err);
+    }
+  })(window.gtmCustom = window.gtmCustom || {});         
+</script>
+
+
+
+  <div class="product-list-item-details">
+    <p class="product-list-item-vendor vendor meta">Herbivore Botanicals</p>
+    <h1><a data-gtm_id="result-6655086919798" href="/collections/all/products/nova-15-vitamin-c-turmeric-brightening-serum">NOVA 15% Vitamin C + Turmeric Brightening Serum</a></h1>
+    
+    <div style="display: inline-block;">
+    <div data-oke-reviews-product-listing-rating><div data-oke-reviews-version="2.14.5" class="okeReviews okeReviews--theme">
+<div class="okeReviews-reviewsSummary js-okeReviews-reviewsSummary" data-oke-ga-click-action="Star Rating Summary Click"
+ data-oke-ga-click-label="NOVA 15% Vitamin C + Turmeric Brightening Serum" 
+>
+<div class="okeReviews-reviewsSummary-starRating">
+<span class="okeReviews-starRating okeReviews-starRating--small">
+<span class="okeReviews-a11yText">Rated 5.0 out of 5</span>
+<span class="okeReviews-starRating-indicator" role="presentation">
+<span class="okeReviews-starRating-indicator-layer"></span>
+<span class="okeReviews-starRating-indicator-layer okeReviews-starRating-indicator-layer--foreground" style="width: 99%"></span>
+</span>
+</span>
+</div>
+<div class="okeReviews-reviewsSummary-ratingCount">
+<span aria-hidden="true">43 Reviews</span>
+<span class="okeReviews-a11yText">Based on 43 reviews</span>
+</div>
+</div>
+</div>
+</div></div>
+    
+    <p class="product-list-item-price">
+      
+        
+          <span class="price">
+            <span class="money">$64.00</span>
+            
+          </span>
+        
+      
+    </p>
+  </div>
+  
+            <span class="tw-absolute tw-top-4 tw-left-4 tw-inline-flex tw-items-center tw-px-3 tw-transform tw-py-0.5  tw-font-bold tw-bg-red-100">
+             NEW!
+            </span>
+        
+
+</article>
+
+  
+  <!-- Bold D&H //collection -->
+
+<!-- //end collection D&H -->
+    
+
+
+
+
+<article class="product-list-item tw-relative" id="product-list-item-4536991547510">
+
+  <figure class="product-list-item-thumbnail">
+    <a data-gtm_id="result-4536991547510" href="/collections/all/products/pink-cloud-rosewater-tremella-creamy-jelly-cleanser">
+      <img src="//cdn.shopify.com/s/files/1/0203/8454/products/Herbivore_PinkCloud_CreamyJellyCleanser_Main_3_grande.gif?v=1594746302" alt="PINK CLOUD Rosewater + Tremella Creamy Jelly Cleanser" />
+    </a>
+
+    
+
+    
+  </figure>
+
+  <!-- Neway dataLayer -->
+  <!-- Build up Array for use with GTM datalayer (snippets/gtm_datalayer_product_inline) -->
+
+<!-- Due to new render variable scope - we need to pull in value of actual output to render the return value - like a function -->
+
+
+
+<script> 
+  (function (gtmCustom) {    
+    try {  
+      gtmCustom.recIndex ++;
+
+      <!-- Render a generic object - using the parameters passed in -->
+
+
+obj = {
+    'name': "PINK CLOUD Rosewater + Tremella Creamy Jelly Cleanser",
+    'id': 'PKCL-101140',
+
+    'brand': "Herbivore Botanicals",
+    'category': "Facial Care",
+    'variantBarCode': '850009804617',
+    'list': gtmCustom.list_name,
+    'position': gtmCustom.recIndex,
+    'g_product_id': "shopify_US_4536991547510_31890961498230",
+    'generic_object_render': true,
+    
+        'price': 24.00,
+    
+    'variant': ""
+};
+
+
+
+
+      gtmCustom.impressions.push(obj);
+      gtmCustom.productArray["result-4536991547510"] = obj;
+    } catch (err) {      
+      console.log(err);
+    }
+  })(window.gtmCustom = window.gtmCustom || {});         
+</script>
+
+
+
+  <div class="product-list-item-details">
+    <p class="product-list-item-vendor vendor meta">Herbivore Botanicals</p>
+    <h1><a data-gtm_id="result-4536991547510" href="/collections/all/products/pink-cloud-rosewater-tremella-creamy-jelly-cleanser">PINK CLOUD Rosewater + Tremella Creamy Jelly Cleanser</a></h1>
+    
+    <div style="display: inline-block;">
+    <div data-oke-reviews-product-listing-rating><div data-oke-reviews-version="2.14.5" class="okeReviews okeReviews--theme">
+<div class="okeReviews-reviewsSummary js-okeReviews-reviewsSummary" data-oke-ga-click-action="Star Rating Summary Click"
+ data-oke-ga-click-label="PINK CLOUD Rosewater + Tremella Creamy Jelly Cleanser" 
+>
+<div class="okeReviews-reviewsSummary-starRating">
+<span class="okeReviews-starRating okeReviews-starRating--small">
+<span class="okeReviews-a11yText">Rated 4.7 out of 5</span>
+<span class="okeReviews-starRating-indicator" role="presentation">
+<span class="okeReviews-starRating-indicator-layer"></span>
+<span class="okeReviews-starRating-indicator-layer okeReviews-starRating-indicator-layer--foreground" style="width: 94%"></span>
+</span>
+</span>
+</div>
+<div class="okeReviews-reviewsSummary-ratingCount">
+<span aria-hidden="true">107 Reviews</span>
+<span class="okeReviews-a11yText">Based on 107 reviews</span>
+</div>
+</div>
+</div>
+</div></div>
+    
+    <p class="product-list-item-price">
+      
+        
+          <span class="price">
+            <span class="money">$24.00</span>
+            
+          </span>
+        
+      
+    </p>
+  </div>
+  
+
+</article>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

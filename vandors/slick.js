@@ -42,7 +42,7 @@ $(document).on('ready', function() {
             
   });
 
-
+  // 漢堡動畫
   // jQuery 版本
   $(function(){
   

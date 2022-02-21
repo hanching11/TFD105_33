@@ -18,6 +18,8 @@
     left: 0;
     top: 0;
 
+    
+
     /* border: 2px solid rgb(137, 95, 221); */
   }
   @media screen and (max-width: 767.98px){
@@ -83,18 +85,21 @@
     /* border: 1px solid rgb(103, 122, 42); */
   }
 
- 
 
   nav.main_nav{
     margin: 0 auto;
+    background: linear-gradient(197.58deg, #9BDED9 -20.66%, #FFFFFF 72.97%);
+    overflow: hidden;
     /* border: 5px solid rgb(5, 5, 5); */
+   
   }
 
   @media screen and (min-width: 768px){
     nav.main_nav{
       display: flex !important;
       align-items: center;
-      
+      background: #fff;
+       /* border: 5px solid rgb(5, 5, 5); */
     }
     
     nav.out_nav li{
@@ -124,12 +129,10 @@
   
   /* 行動版時，調整列表樣式 */
   @media screen and (max-width: 767.98px){
-    nav.main_nav{
+    /* nav.main_nav{
       display: flex;
       background: linear-gradient(197.58deg, #9BDED9 -20.66%, #FFFFFF 72.97%);
-  
-      
-    }
+    } */
     ul.nav_list{
       /* background-color: #fff; */
       display: block;
@@ -144,6 +147,9 @@
 
   /* 行動版時，將按鈕顯示出來 */
   @media screen and (max-width: 767.98px){
+    .main_nav{
+      display: none;
+    }
     button.hamburger, .out_nav a:nth-child(n+2){
       display: inline-block;
     }

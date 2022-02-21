@@ -2,7 +2,7 @@
 .pdc_list a:last-child:hover{
     display: block;
     text-decoration: none;
-    Width:138.99px;
+    /* Width:138.99px; */
     Height :47px;
     background: #9BDED9;
 
@@ -19,31 +19,65 @@
 
 /*-----------------------------------產品------------------------------  */
 .products{
+    
     margin: 0 auto;
     /* border: 1px solid rgb(8, 31, 163); */
 }
 
 .pdc_list{
-    width: 1064px;
-    margin: 0 auto;
+    /* width: 1064px; */
+    /* width: 100%; */
+    /* margin: 0 auto; */
     
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
+    flex-direction: row;
+    
+   
+    
 
      /* 深藍綠 */
      color: #23718A;
-    /* border: 1px solid rgb(8, 31, 163); */
+    border: 1px solid rgb(8, 31, 163);
 }
 
 .pdc_list ol{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 434px;
-    justify-content: space-between;
-    padding-bottom: 159px;  
+    flex-grow: 1;
+
+    flex-basis: 300px;
+ 
+    padding-bottom: 160px;  
+
     /* border: 2px solid rgb(237, 241, 5);   */
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1399.88px){
+    .pdc_list{
+        margin: 0 200px;
+    }
+}
+
+
+@media (min-width: 1400px){
+    .pdc_list{
+        margin: 0 200px;
+    }
+    .pdc_list ol:last-child{
+        flex-grow: 1;
+    
+    
+        padding-bottom: 160px;  
+    
+        /* border: 2px solid rgb(237, 241, 5);   */
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px){
+    .pdc_list ol{
+        /* margin: 0 auto; */
+    }
 }
 
 .pdc_list li{
@@ -79,7 +113,7 @@
 
 
 .pdc_list ol p{
-    width: 380px;
+    /* width: 380px; */
     margin: 25px 0;
     font-weight: 300;
     font-size: 14px;
@@ -90,13 +124,15 @@
 }
 
 .pdc_list a img{
+    /* display: block; */
+    width: 100%;
     margin-bottom: 19px;
 }
 
 .pdc_list a:last-child{
     display: block;
     text-decoration: none;
-    Width:138.99px;
+    /* Width:138.99px; */
     Height :47px;
     background: #042D41;
 
@@ -270,7 +306,6 @@
 
 /* ------------------------------自動輪播-------------------------------- */
 .ig_main{
-    
     width: 100%;
     margin: 0 auto;
     /* width: 1465px; */
@@ -351,8 +386,9 @@
 margin: 0px 10px;
 }
 
-.slick-slide img {
+.slick-slide img{
 width: 100%;
+/* border: 1px solid black; */
 }
 
 .slick-prev:before,
