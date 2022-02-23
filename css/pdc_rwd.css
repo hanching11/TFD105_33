@@ -21,9 +21,9 @@
   
       
       main.product{
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         /* height: 1000px; */
-        background-color: #FFFFFF;
+      
         /* width: calc(100% - var(--aside-width)); */
         /* margin-left: var(--aside-width); */
 
@@ -39,7 +39,7 @@
       }
 
       main.product ul.item_list{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         list-style: none;
         margin: 0 10%;
         padding: 0;
@@ -56,7 +56,7 @@
         padding: 0 10px;
         margin-bottom: 100px;
 
-        border: 1px solid green;
+        /* border: 1px solid green; */
       }
       
       main.product ul.item_list > li:nth-child(3n){
@@ -79,7 +79,6 @@
         text-align: center;
         letter-spacing: 0.2em;
         color: #FFFFFF;
-
         /* border: 2px solid rgb(55, 222, 228); */
       }
       main.product ul.item_list > li > a div.img_block{
@@ -136,7 +135,7 @@
         main.product ul.item_list{
           margin: 0 auto;
           max-width: 350px;
-          border: 5px solid rgb(93, 92, 165);
+          /* border: 5px solid rgb(93, 92, 165); */
         }
           main.product ul.item_list li{
         
@@ -156,7 +155,7 @@
         main.product ul.item_list{
           margin: 0 auto;
           width: 400px;
-          border: 5px solid rgb(93, 92, 165);
+          /* border: 5px solid rgb(93, 92, 165); */
         }
        
         main.product ul.item_list li{
@@ -171,7 +170,7 @@
         main.product ul.item_list{
           margin: 0 auto;
           max-width: 900px;
-          border: 5px solid rgb(165, 160, 92);
+          /* border: 5px solid rgb(165, 160, 92); */
         }
 
         main.product ul.item_list li{
@@ -190,7 +189,7 @@
         main.product ul.item_list{
           margin: 0 auto;
           max-width: 1000px;
-          border: 5px solid rgb(93, 92, 165);
+          /* border: 5px solid rgb(93, 92, 165); */
         }
     
       }
