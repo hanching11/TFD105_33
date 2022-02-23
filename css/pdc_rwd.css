@@ -184,12 +184,36 @@
         }
       }
 
-
-      @media (min-width:1440px){
+      
+      @media (min-width: 1200px) and (max-width: 1399.88px){
         main.product ul.item_list{
+          
+          margin: 0 auto;
+         
+          border: 5px solid rgb(93, 92, 165);
+        }
+
+        main.product ul.item_list li{
+          margin: 0 auto;
+         flex-basis: 400px;
+          
+        }
+
+      }
+
+
+      @media (min-width:1400px){
+        main.product ul.item_list{
+          
           margin: 0 auto;
           max-width: 1000px;
           /* border: 5px solid rgb(93, 92, 165); */
+        }
+
+        main.product ul.item_list li{
+          margin: 0 auto;
+         flex-basis: 400px;
+          
         }
     
       }

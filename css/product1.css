@@ -64,7 +64,7 @@
     /* border: 1px solid rgb(8, 31, 163); */
 }
 
-.product03 {
+.product03{
     width: 1064px;
     margin: 0 auto;
     display: flex;
@@ -179,7 +179,7 @@
 }
 
 
-/* ---------- 購物車 ---------- */
+/* ---------- 加入購物車 ---------- */
 .pdc01_list a:last-child{
     display: block;
     text-decoration: none;
@@ -227,6 +227,37 @@
     /* border: 2px solid rgb(57, 143, 36); */
 }
 
+@media (max-width: 575.98px){
+    .pdc_img{
+        width: 100%;
+        margin-bottom: 30px;
+          /* border: 2px solid rgb(57, 143, 36); */
+    }
+
+    .product03{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* ---------- 左側商品圖+加入收藏 ---------- */
+    .pdc_img a:last-child{
+     
+       
+
+        
+        /* border: 2px solid rgb(57, 143, 36); */
+    }
+
+    .pdc_img li{
+        margin: 15px 40px;
+        padding-bottom: 15px;
+        
+        border-bottom: 0.5px solid #8BBBB7;
+    
+        /* border: 2px solid rgb(57, 143, 36); */
+    }
+}
 
 /*------------------------------ 產品標語 --------------------------------- */
 .slogan{
@@ -501,94 +532,11 @@
 }
 
 /*---------------------------------你可能會喜歡之清單----------------------------  */
-.pdc_list {
-    width: 1064px;
-    margin: 0 auto;
-    
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
 
-     /* 深藍綠 */
-     color: #23718A;
-    /* border: 1px solid rgb(8, 31, 163); */
+
+.product{
+    background: linear-gradient(336.46deg, #8BBBB7 -24.07%, rgba(155, 222, 217, 0.510559) -24.07%, rgba(139, 187, 183, 0) 93.39%);
 }
-
-.pdc_list ol{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 434px;
-    justify-content: space-between;
-    padding-bottom: 159px;  
-    /* border: 2px solid rgb(237, 241, 5);   */
-}
-
-.pdc_list li{
-    font-family: Noto Sans TC;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0.2em;
-    /* border: 2px solid rgb(52, 241, 5);   */
-}
-
-
-.pdc_list li + li{
-    /* 價錢 */
-    font-family: Noto Sans TC;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0.2em;
-    /* border: 2px solid rgb(241, 5, 5);   */
-}
-
-
-.pdc_list h1{
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0.2em;
-    padding-bottom: 25px;  
-    /* border: 2px solid rgb(52, 241, 5); */
-}
-
-
-.pdc_list ol p{
-    width: 380px;
-    margin: 25px 0;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 30px;
-    /* or 214% */
-    letter-spacing: 0.25em;
-    /* border: 2px solid rgb(52, 241, 5); */
-}
-
-.pdc_list a img{
-    margin-bottom: 19px;
-}
-
-.pdc_list a:last-child{
-    display: block;
-    text-decoration: none;
-    Width:138.99px;
-    Height :47px;
-    background: #042D41;
-
-    font-family: Noto Sans TC;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 47px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    color: #FFFFFF;
-    /* border: 2px solid rgb(57, 143, 36); */
-}
-/*---------------------------------你可能會喜歡清單----------------------------  */
-
 
 
 /*---------------------------------- 回頂部 ----------------------------------- */
@@ -669,13 +617,6 @@
 
 
 
-
-/* --------------------------------底部區塊-------------------------------- */
-footer{
-    width: 1277px;
-    margin: 61px auto 0;
-    /* border: 1px solid black; */
-}
 
 
 
