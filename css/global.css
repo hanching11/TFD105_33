@@ -169,7 +169,7 @@ body{
 
 .slogan h1{  
    margin: 0 auto;
-   width: 1064px;
+   /* width: 1064px; */
    padding:  108px 0 ;
    font-size: 30px;
    line-height: 60px;
@@ -559,6 +559,74 @@ footer li p + a:before{
     }
 }
 
+
+@media (min-width: 992px) and (max-width: 1199.88px){
+    footer{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid rgb(252, 33, 33); */
+    }
+
+    .footer_logo{
+       position: relative;
+       display: block;
+       margin: 50px auto;
+        /* border: 1px solid rgb(252, 33, 33); */
+    }
+    
+
+    footer ul{
+        margin: 0 auto;
+        /* margin: 0 300px; */
+        display: block;
+        
+    }
+
+    footer li{
+        
+        margin: 0 auto;
+         /* border: 1px solid rgb(144, 83, 83); */
+    }
+
+    .map img{
+        display: block;
+        margin: 0 auto;
+        /* width: 100%; */
+        /* border: 2px solid rgb(84, 33, 252); */
+    }
+
+
+    footer li:nth-child(2){
+        margin: 0 auto;
+       max-width: 300px;
+       /* border-bottom: 1px solid #31999D; */
+        /* border: 2px solid rgb(77, 252, 33); */
+    }
+
+    .follow{
+        width: 140px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        /* border: 2px solid rgb(5, 241, 143); */
+    }
+
+    .follow h2{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #31999D;
+    }
+
+    footer li:nth-child(2){
+        margin-bottom: 40px;
+        /* border: 2px solid rgb(198, 241, 5); */
+    }
+
+    footer li h2:first-child{
+        text-align: center;
+        margin-bottom: 20px;
+        /* border: 2px solid rgb(198, 241, 5); */
+    }
+}
 
 
 

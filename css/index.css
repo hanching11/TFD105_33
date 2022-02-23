@@ -19,7 +19,6 @@
 
 /*-----------------------------------產品------------------------------  */
 .products{
-    
     margin: 0 auto;
     /* border: 1px solid rgb(8, 31, 163); */
 }
@@ -32,8 +31,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
-   
     
 
      /* 深藍綠 */
@@ -152,7 +149,7 @@
 /*-----------------------------------廣告------------------------------  */
 .index_cm{
     margin: 0 auto;
-
+    width: 100%;
     /* border: 1px solid black; */
 }
 
@@ -161,20 +158,16 @@
     justify-content: center;
 }
 
-
-
 .index_cm li{
     /* 淺藍綠 */
     background-color: rgba(139, 187, 183, .2) ; 
-    
-
     /* 深靛藍 */
     color: #042D41;
     text-align: center;
 }
 
 .index_cm img{
-    /* display: block; */
+    display: block;
     /* width: 960px; */
 }
 
@@ -190,7 +183,6 @@
     
     margin-bottom: 37px ;
     border-bottom: 0.5px solid #042D41;
-
 }
 
 .index_cm p{
@@ -205,11 +197,34 @@
     letter-spacing: 0.25em;
 }
 
+@media (max-width: 575.98px){
+    .index_cm ul{
+        display: block;
+        
+    }
+    
+    .index_cm h1{
+        font-size: 18px;
+        line-height: 35px;
+        /* identical to box height */
+        letter-spacing: 0.2em;
+        padding-top: 171px;
+        
+        width: 130px;
+        /* margin: 0 auto; */
+        
+        margin-bottom: 37px ;
+        border-bottom: 0.5px solid #042D41;
+    }
+    
+}
 
 
 /*-----------------------------------最新消息------------------------------  */
 .news{  
+    width: 100%;
     margin-bottom: 148px;  
+     border: 1px solid black;
 }   
 
 .news h1{
@@ -229,7 +244,7 @@
 }
 
 .news ol{
-    width: 1064px;
+    /* width: 1064px; */
     height: 50px;
     background: rgba(139, 187, 183, 0.25);
 
@@ -302,6 +317,11 @@
 }
 
 
+@media (max-width: 575.98px){
+
+}
+
+
 
 
 /* ------------------------------自動輪播-------------------------------- */
@@ -309,7 +329,7 @@
     width: 100%;
     margin: 0 auto;
     /* width: 1465px; */
-    height: 700px;
+    height: 550px;
     background: rgba(139, 187, 183, 0.1);
      /* border: 1px solid rgb(202, 38, 38); */
 }
@@ -378,7 +398,7 @@
 
 
 .slider {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
