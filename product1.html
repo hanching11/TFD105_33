@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/input_num.css">
     <link rel="stylesheet" href="./css/pdc_rwd.css">
     <link rel="stylesheet" href="./css/product1.css">
 </head>
@@ -73,17 +78,28 @@
                         <li>乾肌精華液乾肌精華液乾肌精華液乾肌精華液，肌精華液敏感肌精華液</li>
                         <li>$800  NTD </li>
                         <li>內容量 : 30ml</li>
-                        <li>1</li>
+                        <!-- <li>1</li> -->
+                        <li>
+                             <div class='ctrl'>
+                                <div class='ctrl__button ctrl__button--decrement'>&ndash;</div>
+                                <div class='ctrl__counter'>
+                                <input class='ctrl__counter-input' maxlength='10' type='text' value='0'>
+                                <div class='ctrl__counter-num'>0</div>
+                                </div>
+                                <div class='ctrl__button ctrl__button--increment'>+</div>
+                            </div>
+                        </li>
                         <a href="./shop.html">加入購物車</a>
                     </ol>
 
-                    <ol class="pdc_add" >
-                        <p>–</p>
-                        <p>+</p>
-                    </ol>
+                   
                 </ul>
             </article>
         </section>
+
+      
+        
+    
     
         <!------------------------------ 產品標語 --------------------------------->
         <div class="slogan">
@@ -227,5 +243,6 @@
         </footer>
     </div>
     <script src="./vandors/slick.js"></script>  
+   <script src="./vandors/input_num.js"></script>
 </body>
 </html>

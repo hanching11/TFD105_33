@@ -58,7 +58,6 @@
     .filter{
         width: 100%;
         padding: 20px;
-        margin: 0 auto 10px;
         /* border: 1px solid rgb(8, 31, 163); */
     }
 }
@@ -86,10 +85,10 @@
 .pdc01_list ol:first-child{
     display: flex;
     flex-wrap: wrap;
-    max-height: 380px;
-    max-width: 415px;
+    max-height: 381px;
+    max-width: 412px;
     margin-left: 40px;
-    /* border: 1px solid rgb(237, 241, 5);   */
+    border: 1px solid rgb(237, 241, 5);  
 }
 
 .pdc01_list li:first-child{
@@ -103,6 +102,7 @@
      letter-spacing: 0.2em;
      /* 深靛藍 */
      color: #042D41;
+     border: 1px solid rgb(237, 241, 5);  
 } 
 
 .pdc01_list li{ 
@@ -153,10 +153,16 @@
 
 /* 數量 */
 .pdc01_list li:nth-last-child(2){
-    flex-basis: 140px;
-    margin-right: 10px;
+    width: 100%;
+   
+    /* flex-basis: 147px; */
+    display: flex;
+    margin-right: 16px;
+
+    align-items: center;
+    justify-content: center;
+    height: 47px;
     
-  /* width: 100%; */
     /* border: 3px solid rgb(5, 166, 241);   */
 }
 
@@ -197,14 +203,14 @@
 .pdc01_list a:last-child{
     display: block;
     text-decoration: none;
-    Width:250px;
-    Height:50px;
+    Width:246.9px;
+    Height:47px;
     background: #042D41;
 
     font-family: Noto Sans TC;
     font-style: normal;
     font-size: 18px;
-    line-height: 50px;
+    line-height: 47px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
@@ -256,23 +262,19 @@
 
     .pdc01_list ol:first-child{
         display: block;
-        margin: 0 40px;
-        /* border: 1px solid rgb(237, 241, 5);   */
+         margin: 0 30px;
+
+        border: 1px solid rgb(237, 241, 5);  
     }
 
     /* 商品描述 */
     .pdc01_list li:nth-child(2){
         padding-bottom: 40px;
-        /* border: 5px solid rgb(136, 12, 12);   */
+            /* border: 5px solid rgb(136, 12, 12);   */
     }
 
-    /* 數量 */
-    .pdc01_list li:nth-last-child(2){
-       margin: 0 auto;
-       margin-bottom: 10px;
-  
-        /* border: 3px solid rgb(154, 209, 235);   */
-    }
+    
+
 
     /* 內容量 */
     .pdc01_list li:nth-child(4){
