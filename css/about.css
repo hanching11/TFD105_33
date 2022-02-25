@@ -203,6 +203,253 @@ article{
 
 
 
+/* banner */
+
+/* 1 */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans TC', 'Noto Sans';
+}
+
+body{
+	text-decoration: none;
+}
+
+
+/* 2 */
+.bannerTest{
+	position: relative;
+	width: 100%;
+	margin-top: 100px;
+}
+
+.myslide{
+	min-height: 500px;
+	display: none;
+	overflow: hidden;
+	/* -webkit-transition: .4s; */
+    /* transition: .4s; */
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+	/* border: 2px solid rgb(44, 80, 224) */
+}
+
+
+.img3{
+	background-image: url("../img/banner_about1920.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+/* 3 */
+.txt{
+	position: absolute;
+	width: 290px;
+	font-weight: 500;
+	color: #31999D;   
+	letter-spacing: 2px;
+	line-height: 35px;
+	text-align: center;
+	/* left: 12%; */
+	left: 80%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	
+	/* word-wrap:break-word; */
+	letter-spacing: 0;
+	/* border: 2px solid rgb(80, 224, 44); */
+}
+
+@-webkit-keyframes posi {
+  from {left: 10%;}
+  to {left: 12%;}
+}
+
+
+@keyframes posi {
+  from {left: 10%;}
+  to {left: 12%;}
+}
+
+.txt h1{
+    margin-top: 0;
+	color: #31999D;   
+	font-size: 48px;
+	margin-bottom: 20px;
+	line-height: 60px;
+	font-weight: 500;
+	width: 100%;
+	/* word-wrap:break-word; */
+	letter-spacing: 0.2em;
+	/* border: 2px solid rgb(57, 143, 36); */
+}
+
+/* /3 */
+
+/* 4 */
+.slider-button{
+	font-size: 14px;
+	font-weight: 900;
+	border: none;
+	background-color: white;
+	color: #31999D;   
+	padding: 10px 15px;
+	letter-spacing: 0.2em;
+	cursor: pointer;
+	-webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.slider-button:hover{
+	background-color: #31999D;  
+	color: white;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 992px){
+	.txt{
+		top: 30%;
+		left: 12%;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.txt{
+		top: 30%;
+		left: 12%;
+	}
+}
+
+@-webkit-keyframes posi {
+	from {left: 8%;}
+	to {left: 12%;}
+  }
+  
+  
+  @keyframes posi {
+	from {left: 8%;}
+	to {left: 12%;}
+  }
+
+
+
+/* 5 */
+@media screen and (max-width: 768px){
+	.txt{
+		letter-spacing: 2px;
+		line-height: 30px;
+		top: 20%;
+		left: 12%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi;
+		-webkit-animation-duration: 2s;
+		animation-name: posi;
+		animation-duration: 2s;
+	}
+
+
+	@-webkit-keyframes posi {
+		from {left: 10%;}
+		to {left: 12%;}
+	  }
+	  
+	  
+	  @keyframes posi {
+		from {left: 10%;}
+		to {left: 12%;}
+	  }
+
+
+	.dotsbox{
+		bottom: 30px;
+	}
+	.dot{
+		width: 10px;
+		height: 10px;
+	}
+
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 576px){
+
+    .txt{
+		letter-spacing: 2px;
+		line-height: 35px;
+		top: 20%;
+		left: 12%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi;
+		-webkit-animation-duration: 2s;
+		animation-name: posi;
+		animation-duration: 2s;
+	}
+
+	.txt h1{
+		line-height: 35px;
+		
+		margin-bottom: 15px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+
+}
+
+
+@media screen and (max-width: 366px){
+
+    .txt{
+		letter-spacing: 2px;
+		line-height: 35px;
+		top: 15%;
+	}
+
+	.txt h1{
+		line-height: 35px;
+		
+		margin-bottom: 10px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+
+
+}
+/* /6 */
+
+@media screen and (min-width: 1400px){
+
+	.txt{
+		top: 30%;
+	}
+	.txt h1{
+		width: 100%;
+	}
+	.txt p{
+		font-size: 18px;
+		width: 60%;
+	}
+
+}
 
 
 

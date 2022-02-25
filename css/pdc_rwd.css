@@ -183,7 +183,6 @@
         main.product ul.item_list li{
           margin: 0 auto;
          flex-basis: 400px;
-          
         }
         main.product ul.item_list > li:nth-child(n){
           margin: 0 auto;
@@ -194,11 +193,14 @@
       
       @media (min-width: 1200px) and (max-width: 1399.88px){
         main.main ul.item_list > li{
-          width: calc((100% - 20px) / 2);
+          margin: 0 auto;
+          width: calc((100% - 0px) / 2);
         }
         main.main ul.item_list > li:nth-child(2n){
           margin-right: 0;
         }
+
+        
 
       }
 
@@ -211,6 +213,7 @@
           margin-right: 0;
         }
 
+        
 
     
       }

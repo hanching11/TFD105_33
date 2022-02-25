@@ -68,7 +68,7 @@
 /*-----------------------------------個別產品-------------------------------  */
 .products{
     margin: 0 auto;
-    margin-top: 130px;
+    margin-top: 100px;
     padding-bottom: 100px;
     /* display: flex; */
    
@@ -78,9 +78,10 @@
 }
 
 .product03{
-    width: 1064px;
+    max-width: 1064px;
     margin: 0 auto;
     display: flex;
+    /* border: 1px solid rgb(237, 241, 5);   */
 }
 
 
@@ -144,7 +145,6 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 30px;
-    /* or 214% */
     letter-spacing: 0.25em;
 
     /* 深靛藍 */
@@ -160,6 +160,8 @@
   /* width: 100%; */
     /* border: 3px solid rgb(5, 166, 241);   */
 }
+
+
 
 
 /* ---------- 增減商品---------- */
@@ -274,7 +276,6 @@
     .pdc01_list li:nth-last-child(2){
        margin: 0 auto;
        margin-bottom: 10px;
-  
         /* border: 3px solid rgb(154, 209, 235);   */
     }
 
@@ -289,7 +290,7 @@
     display: block;
     width: 100%;
     /* border: 2px solid rgb(57, 143, 36); */
-}
+    }
 
     /* ---------- 左側商品圖+加入收藏 ---------- */
     .pdc_img li{
@@ -297,6 +298,106 @@
         padding-bottom: 15px;
         border-bottom: 0.5px solid #8BBBB7;
         /* border: 2px solid rgb(57, 143, 36); */
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .pdc_img{
+       max-width: 550px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        /* border: 2px solid rgb(57, 143, 36); */
+    }
+   
+    .products{
+        padding-bottom: 30px;
+        /* border: 2px solid rgb(57, 143, 36); */
+    }
+
+    .product03{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .pdc01_list ol:first-child{
+        display: block;
+        margin: 0 40px;
+        /* border: 1px solid rgb(237, 241, 5);   */
+    }
+
+    /* 商品描述 */
+    .pdc01_list li:nth-child(2){
+        padding-bottom: 40px;
+        /* border: 5px solid rgb(136, 12, 12);   */
+    }
+
+    /* 數量 */
+    .pdc01_list li:nth-last-child(2){
+       margin: 0 auto;
+       margin-bottom: 10px;
+        /* border: 3px solid rgb(154, 209, 235);   */
+    }
+
+    /* 內容量 */
+    .pdc01_list li:nth-child(4){
+        padding-bottom: 50px;
+        /* border: 5px solid rgb(136, 12, 12);   */
+    }
+
+    /* ---------- 加入購物車 ---------- */
+    .pdc01_list a:last-child{
+    display: block;
+    width: 100%;
+    /* border: 2px solid rgb(57, 143, 36); */
+    }
+
+    /* ---------- 左側商品圖+加入收藏 ---------- */
+    .pdc_img li{
+        margin: 20px auto;
+        padding-bottom: 15px;
+        border-bottom: 0.5px solid #8BBBB7;
+        /* border: 2px solid rgb(57, 143, 36); */
+    }
+}
+
+@media  (min-width: 768px) and (max-width:1199.88px){
+    .product03{
+        margin: 0 30px;
+        /* border: 1px solid rgb(237, 241, 5);   */
+    }
+
+    .product03 ol{
+        height: 100%;
+        /* border: 1px solid rgb(129, 130, 46);   */
+    }
+
+    /* 數量 */
+    .pdc01_list li:nth-last-child(2){
+      flex-grow: 1;
+    margin-right: 0;
+    /* width: 100%; */
+        /* border: 3px solid rgb(5, 166, 241);   */
+    }
+
+      /* 商品描述 */
+      .pdc01_list li:nth-child(2){
+        padding-bottom: 0px;
+        /* border: 5px solid rgb(136, 12, 12);   */
+    }
+
+      /* 內容量 */
+      .pdc01_list li:nth-child(4){
+        padding-bottom: 0px;
+        /* border: 5px solid rgb(136, 12, 12);   */
+    }
+
+    /* ---------- 加入購物車 ---------- */
+    .pdc01_list a:last-child{
+    display: block;
+    width: 100%;
+    /* border: 2px solid rgb(57, 143, 36); */
     }
 
 }
@@ -381,7 +482,7 @@
 
 .benefits h1{
     text-align: center;
-    margin-bottom: 52px;
+    margin-bottom: 60px;
 
     /* 小標題 */
     font-family: Noto Sans TC;
@@ -398,13 +499,14 @@
 
 
 .benefits ul{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     /* border: 3px solid rgb(8, 31, 163); */
 }
 
 .benefits li{
+    height: 400px;
     background-repeat: no-repeat;
     /* background-position: center center; */
     transition: .5s;
@@ -441,7 +543,7 @@
 
 
 .benefits ul h2{
-    margin: 112px auto 75px;
+    margin: 50px auto 10px;
     padding-bottom: 44px;
     width: 180px;
     text-align: center;
@@ -510,6 +612,7 @@
     }
     
     .benefits ul p{
+        margin-top: 40px;
         opacity: 0;
         max-width:80px;
         font-size: 14px;
@@ -526,12 +629,61 @@
         /* border: 3px solid rgb(8, 31, 163); */
     }
 
-    
     .benefits li:hover{
         flex-grow: 85;
         /* border: 3px solid rgb(8, 31, 163); */
     }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .benefits ul{
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+        /* border: 3px solid rgb(8, 31, 163); */
+    }
     
+    .benefits ul h2{
+        padding-bottom: 44px;
+        max-width: 40px;
+        /* padding: 10px; */
+        font-size: 18px;
+        line-height: 25px;
+        /* border: 3px solid rgb(8, 31, 163); */
+    }
+    
+    .benefits ul p{
+        opacity: 0;
+        max-width:80px;
+        font-size: 14px;
+        line-height: 20px;
+        /* border: 3px solid rgb(8, 31, 163); */
+    }
+
+    .benefits ul p:hover{
+        opacity: 1;
+        max-width:150px;
+        font-size: 14px;
+        line-height: 20px;
+        transition: .5s;
+        /* border: 3px solid rgb(8, 31, 163); */
+    }
+
+    .benefits li:hover{
+        flex-grow: 85;
+        /* border: 3px solid rgb(8, 31, 163); */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.88px){
+    .benefits ul p{
+        max-width: 150px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 30px;
+        /* border: 3px solid rgb(8, 31, 163); */
+    }
 }
 
 /*-----------------------------------使用說明------------------------------  */
@@ -540,7 +692,6 @@
     margin: 118px auto 168px;
     /* border: 3px solid rgb(8, 31, 163); */
 }
-
 
 
 .tip li{
@@ -600,6 +751,10 @@
 }
 
 @media (max-width: 575.98px){
+  
+}
+
+@media (max-width: 905px) {
     .tip{
         /* width: 100%; */
         margin: 0 auto;
@@ -644,20 +799,10 @@
         margin-top:  50px;
         /* border: 3px solid rgb(36, 34, 31); */
     }
-    
 }
 
 /*-----------------------------------你可能會喜歡------------------------------  */
 .pdc_like{
-    
-    margin: 0 auto;
-
-    /* 淺藍綠垂直漸層 */
-    background: linear-gradient(336.46deg, #8BBBB7 -24.07%, rgba(155, 222, 217, 0.510559) -24.07%, rgba(139, 187, 183, 0) 93.39%);
-    /* border: 1px solid rgb(8, 31, 163); */
-}
-
-.pdc_like h1{
     padding: 34px 0 54px 0;
     font-family: Noto Sans TC;
     font-style: normal;
@@ -671,10 +816,8 @@
     color: #31999D;
 }
 
-.pdc_like .gotop{
-    
+.gotop{
     display: flex;
-    
     margin-left:  1310px;
     padding-bottom: 38px;
     /* border: 1px solid rgb(8, 31, 163); */
