@@ -69,6 +69,7 @@
 .products{
     margin: 0 auto;
     margin-top: 130px;
+    padding-bottom: 100px;
     /* display: flex; */
    
     /* 淺藍綠垂直漸層 */
@@ -237,7 +238,7 @@
 }
 
 .pdc_img{
-    margin-bottom: 150px;
+    /* margin-bottom: 100px; */
     /* border: 2px solid rgb(57, 143, 36); */
 }
 
@@ -246,6 +247,9 @@
         width: 100%;
         margin-bottom: 30px;
           /* border: 2px solid rgb(57, 143, 36); */
+    }
+    .products{
+        padding-bottom: 30px;
     }
 
     .product03{
@@ -348,6 +352,16 @@
     border-bottom: 0.5px solid #31999D;
 
     /* border: 1px solid rgb(8, 31, 163); */
+}
+
+@media (max-width: 575.98px){
+    .slogan h2{
+        
+        margin: 0 20px;
+        text-align: left;
+        letter-spacing: 0.2em;
+        /* border: 1px solid rgb(8, 31, 163); */
+    }
 }
 
 
@@ -474,7 +488,6 @@
 
 @media (max-width: 575.98px){
     .benefits{
-        
         margin: 0 auto;
          /* border: 1px solid rgb(8, 31, 163); */
     }
@@ -523,9 +536,23 @@
 
 /*-----------------------------------使用說明------------------------------  */
 .tip{
-    width: 846px;
+    max-width: 846px;
     margin: 118px auto 168px;
     /* border: 3px solid rgb(8, 31, 163); */
+}
+
+
+
+.tip li{
+    display: flex;
+    
+    /* border: 3px solid rgb(163, 96, 8); */
+}
+
+.tip li:first-child{
+    margin-bottom: 79px;
+    align-items: center;
+    /* border: 3px solid rgb(163, 96, 8); */
 }
 
 .tip h1{
@@ -543,26 +570,13 @@
     color: #31999D;
 }
 
-.tip li{
-    display: flex;
-    
-    /* border: 3px solid rgb(163, 96, 8); */
-}
-
-.tip li:first-child{
-    margin-bottom: 79px;
-    align-items: center;
-    /* border: 3px solid rgb(163, 96, 8); */
-}
-
-
 
 .tip p{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    width: 350px;
-    height: 299px;
+    max-width: 350px;
+    max-height: 299px;
 
     /* 內文 */
     font-family: Noto Sans TC;
@@ -585,6 +599,53 @@
     /* border: 3px solid rgb(36, 34, 31); */
 }
 
+@media (max-width: 575.98px){
+    .tip{
+        /* width: 100%; */
+        margin: 0 auto;
+        margin: 50px auto;
+        /* border: 3px solid rgb(8, 31, 163); */
+    }
+    
+    .tip li{
+        /* display: block; */
+        flex-wrap: wrap;
+        margin: 0 auto;
+        align-items: center;
+        margin-bottom: 30px;
+        /* border: 3px solid rgb(163, 96, 8); */
+    }
+
+    .tip li p:nth-child(2){
+       margin-bottom:  50px;
+        /* border: 3px solid rgb(163, 96, 8); */
+    }
+
+    .tip li p:first-child{
+        /* display: block; */
+       order: 1;
+       margin-top:  10px;
+       margin-bottom:  80px;
+        /* border: 3px solid rgb(163, 96, 8); */
+    }
+
+    .tip img{
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        /* border: 3px solid rgb(163, 96, 8); */
+    }
+    
+
+    .tip p{
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        margin-top:  50px;
+        /* border: 3px solid rgb(36, 34, 31); */
+    }
+    
+}
 
 /*-----------------------------------你可能會喜歡------------------------------  */
 .pdc_like{
