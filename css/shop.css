@@ -1,9 +1,7 @@
-
-
 /*-----------------------------------麵包屑------------------------------  */
 .filter{
     display: flex;
-    width: 1064px;
+    max-width: 1064px;
     align-items: center;
     /* justify-content: space-between; */
     margin: 0 auto 85px;
@@ -56,7 +54,7 @@
 
 
 .shop_list_main{
-    width: 1064px;
+    max-width: 1064px;
     margin: 0 auto;
     margin-top: 100px;
     padding-bottom: 670px;
@@ -68,6 +66,7 @@
 
 /*-----------------------------------商品帳單資訊_清單------------------------------  */
 .shop_list_tab{
+    width: 100%;
     margin: 0 auto;
      /* 深藍綠 */
      /* color: #23718A; */
@@ -107,27 +106,168 @@
     /* border: 2px solid rgb(241, 92, 5);   */
 }
 
-
+/* 商品名稱 */
 .list_t1 ol{
     display: flex;
     align-items: center;
+   
     padding-right: 30px;
-
     /* 選中的篩選列 */
     font-family: Noto Sans TC;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    text-align: center;
     letter-spacing: 0.25em;
-
     /* 深靛藍 */
-
     color: #042D41;
     /* border: 2px solid rgb(52, 241, 5);   */
 }
-/* li_test */
+
+.list_t1 ol:first-child{
+   padding: 20px;
+    /* border: 2px solid rgb(5, 194, 241);   */
+}
+
+.list_t1 ol:nth-child(3){
+    padding: 0px;
+    width: 200px;
+    /* border: 2px solid rgb(5, 194, 241);   */
+ }
+
+ /* 單價 */
+.shop_list td:nth-child(3){
+    padding-left: 100px;
+    /* width: 50px; */
+    /* 價錢 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    /* line-height: 26px; */
+    /* identical to box height */
+    letter-spacing: 0.2em;
+
+    /* 深靛藍 */
+    color: #042D41;
+    /* border: 2px solid rgb(52, 241, 5);   */
+}
+
+
+@media (max-width: 575.98px){
+    .shop_list{
+        position: relative;
+          /* border: 2px solid rgb(5, 194, 241);   */
+    }
+
+    /* 商品名稱 */
+    .list_t1 ol:nth-child(3){ 
+        /* position: relative;  */
+        padding: 0px;
+        padding-bottom: 55px;
+        width: 200px;
+        /* border: 2px solid rgb(5, 194, 241);   */
+     }
+
+    /* 數量 */
+    .shop_list td:nth-child(2){
+        display: block;
+        height: 100%;
+        /* border: 1px inset rgb(19, 46, 43);   */
+    }
+     
+    /* 單價 */
+    .shop_list td:nth-child(3){
+        position: absolute;
+        left: 27%;
+        top: 40%;
+        padding-left: 0px;
+        height: 20px;
+        font-size: 14px;
+
+        /* border: 2px solid rgb(52, 241, 5);   */
+    }
+
+    .shop_list_title{
+      display: none;
+        border: 2px solid rgb(237, 241, 5);  
+    }
+
+}
+
+
+
+
+
+
+.shop_list{
+    /* 底橫列淺藍綠 */ 
+    border-bottom:0.5px solid #8BBBB7;;
+}
+
+
+.list_t1 .like img{
+    padding-right: 10px;
+}
+
+
+td{
+    vertical-align: middle;
+    /* border: 2px solid rgb(80, 23, 75);   */
+}
+
+/* 標題:價格&小計 */
+.shop_list_title td:nth-last-child(-n+2){
+    padding-left: 100px;
+    /* border: 2px solid rgb(80, 23, 75);   */
+}
+
+
+.shop_list td{
+    height: 175px;
+    /* border: 2px solid rgb(80, 23, 75);   */
+}
+
+/* 數量 */
+.shop_list td:nth-child(2){
+    width: 100px;
+    /* border: 1px inset rgb(19, 46, 43);   */
+}
+
+
+
+/* 小計價格 */
+.shop_list td:nth-last-child(2){
+    padding-left: 100px;
+    width: 40px;
+    /* 加入購物車 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    
+    /* identical to box height */
+    letter-spacing: 0.2em;
+
+    /* 深靛藍 */
+    color: #042D41;
+    /* border: 2px solid rgb(9, 5, 241);   */
+}
+
+/* 垃圾桶 */
+.shop_list td:last-child{
+    padding-right: 10px;
+    padding-left: 40px;
+    /* border: 2px solid rgb(241, 186, 5);   */
+}
+
+.shop_list .del a{
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #042D41;
+     /* border: 2px solid rgb(241, 186, 5);   */
+}
 
 
 /* 加入收藏 */
@@ -152,92 +292,14 @@
 }
 /* 加入收藏 */
 
-.shop_list{
-    /* 底橫列淺藍綠 */ 
-    border-bottom:0.5px solid #8BBBB7;;
-}
-
-
-.list_t1 .like img{
-    padding-right: 10px;
-}
-
-
-td{
-    vertical-align: middle;
-}
-
-
-
-.shop_list td{
-    height: 175px;
-}
-
-.shop_list td:first-child{
-    width: 434px;
-}
-
-
-.shop_list td:nth-child(2){
-    width: 100px;
-    text-align: center;
-    /* border: 10px inset rgba(139, 187, 183, 0);   */
-}
-
-
-
-
-
-.shop_list td:nth-child(3){
-    padding-left: 200px;
-    /* width: 50px; */
-    /* 價錢 */
-    font-family: Noto Sans TC;
-    font-style: normal;
-    font-weight: 100;
-    font-size: 18px;
-    /* line-height: 26px; */
-    /* identical to box height */
-    letter-spacing: 0.2em;
-
-    /* 深靛藍 */
-    color: #042D41;
-    /* border: 2px solid rgb(52, 241, 5);   */
-}
-
-
-.shop_list_title td:nth-last-child(-n+2){
-    padding-left: 200px;
-    /* border: 2px solid rgb(80, 23, 75);   */
-}
-
-.shop_list td:last-child{
-    padding-left: 200px;
-    width: 85px;
-    /* 加入購物車 */
-    font-family: Noto Sans TC;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    
-    /* identical to box height */
-    letter-spacing: 0.2em;
-
-    /* 深靛藍 */
-    color: #042D41;
-    /* border: 2px solid rgb(52, 241, 5);   */
-}
-
 
 /*-----------------------------------商品帳單資訊_清單------------------------------  */
 
 /* 數量下拉選單 */
-select.form-control {
+/* select.form-control {
     width: 100px;
     height: 45px;
-
     border: none;
-    /* 選中的篩選列 */
     font-family: Noto Sans TC;
     font-style: normal;
     font-weight: 500;
@@ -245,9 +307,8 @@ select.form-control {
     line-height: 20px;
     letter-spacing: 0.25em;
     text-align: center;
-    /* 深靛藍 */
     color: #042D41;
-}
+} */
 
 
 

@@ -17,15 +17,7 @@
      /* border: 3px solid rgb(5, 166, 241);   */
   }
 
-  @media (max-width: 575.98px){
-    .ctrl {
-        /* width: 100%; */
-        /* border: 3px solid rgb(5, 166, 241);   */
-      }
-  }
-
-
-
+  
   .ctrl__counter {
     font-family: Noto Sans TC;
     font-style: normal;

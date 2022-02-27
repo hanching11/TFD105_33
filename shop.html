@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/input_num.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/shop.css">
 </head>
@@ -67,7 +69,7 @@
                     <tr class="shop_list">
                         <td class="list_t1">
                             <ol>
-                                <a href="#"><img src="./img/del_pdc.svg" alt=""></a>
+                                <input type="checkbox" />
                             </ol>
                             <ol >
                                 <a href="#"><img src="./img/pdc_small.png" alt=""></a>
@@ -81,23 +83,29 @@
                             </ol>
                         </td>
                          <!-- /* 數量下拉選單 */ -->
-                        <td>     
-                            <select name="product_standard_order_amount" class="form-control">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>                                                
-                            </select>
+                        <td>  
+                            <div class='ctrl'>
+                                <div class='ctrl__button ctrl__button--decrement'>&ndash;</div>
+                                <div class='ctrl__counter'>
+                                <input class='ctrl__counter-input' maxlength='10' type='text' value='0'>
+                                <div class='ctrl__counter-num'>0</div>
+                                </div>
+                                <div class='ctrl__button ctrl__button--increment'>+</div>
+                            </div>
                         </td>
+                        <td>單價$800</td>
                         <td>$800</td>
-                        <td>$800</td>
+                        <td class="del">
+                            <a href="#">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </a>
+                        </td>
                     </tr>
 
                     <tr class="shop_list">
                         <td class="list_t1">
                             <ol>
-                                <a href="#"><img src="./img/del_pdc.svg" alt=""></a>
+                                <input type="checkbox" />
                             </ol>
                             <ol >
                                 <a href="#"><img src="./img/pdc_small.png" alt=""></a>
@@ -112,16 +120,22 @@
                         </td>
                         <!-- /* 數量下拉選單 */ -->
                         <td>     
-                            <select name="product_standard_order_amount" class="form-control">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>                                                
-                            </select>
+                             <div class='ctrl'>
+                                <div class='ctrl__button ctrl__button--decrement'>&ndash;</div>
+                                <div class='ctrl__counter'>
+                                <input class='ctrl__counter-input' maxlength='10' type='text' value='0'>
+                                <div class='ctrl__counter-num'>0</div>
+                                </div>
+                                <div class='ctrl__button ctrl__button--increment'>+</div>
+                            </div>
                         </td>
-                        <td>$300</td>
+                        <td>單價$300</td>
                         <td>$1700</td>
+                        <td class="del">
+                            <a href="#">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </a>
+                        </td>
                     </tr>
                     
                 
@@ -239,6 +253,7 @@
 
         </footer>
     </div>
+    <script src="./vandors/input_num.js"></script>
     <script src="./vandors/slick.js"></script>
 </body>
 </html>
