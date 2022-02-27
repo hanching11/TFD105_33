@@ -165,10 +165,22 @@
 }
 
 /* 加入收藏 */
-.list_t1 .like img{
-    padding-right: 10px;
+.like i{
+    padding-right: 2px;
       /* border: 2px solid rgb(80, 23, 75);   */
 }
+
+.like::before{
+    content: '';
+    display: block;
+    height: 12px;
+    width: 12px;
+    padding-right: 3px;
+    background-repeat: no-repeat;
+    background-image: url(../img/bookmark-regular.svg);
+}
+
+
 
 
 td{

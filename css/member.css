@@ -9,7 +9,7 @@
 .member_main{
     display: flex;
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
     padding-bottom: 200px;
     /* border: 1px solid  #d4a41e; */
 }
@@ -17,7 +17,7 @@
 /* 註冊登入切換 */
 .member_login{
     margin: 0 auto;
-    width: 415px;
+    max-width: 415px;
     
    
     margin-top: 144px;
@@ -28,7 +28,7 @@
 .login{
     margin: 0 auto;
     margin-bottom: 90px;
-    width: 235px;
+    max-width: 235px;
     display: flex;
     
   
@@ -78,7 +78,7 @@
 
 
 .member_main .email{  
-    width: 415px;
+    max-width: 415px;
     height: 50px;
     margin-bottom: 30px;
     background: #fff;
@@ -89,7 +89,7 @@
 
 
 .member_main .password{  
-    width: 415px;
+    max-width: 415px;
     height: 50px;
     margin-bottom: 30px;
     background: #fff;
@@ -99,7 +99,7 @@
 
 
 .member_main .send{  
-    width: 420px;
+    max-width: 420px;
     height: 50px;
     margin-bottom: 30px;
     

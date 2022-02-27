@@ -5,14 +5,14 @@
 /*-----------------------------------會員專區------------------------------  */
 .member_All{
     margin: 0 auto;
-    margin-top: 130px;
+    margin-top: 100px;
     background: rgba(139, 187, 183, 0.2);
 }
 
 .member_main{
     display: flex;
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
     padding-bottom: 200px;
     /* border: 1px solid  #d4a41e; */
 }
@@ -20,7 +20,7 @@
 /* 註冊登入切換 */
 .member_login{
     margin: 0 auto;
-    width: 415px;
+    max-width: 415px;
     
    
     margin-top: 144px;
@@ -31,7 +31,7 @@
 .login{
     margin: 0 auto;
     margin-bottom: 90px;
-    width: 235px;
+    max-width: 235px;
     display: flex;
     
   
@@ -79,7 +79,7 @@
 
 
 .member_main .email{  
-    width: 415px;
+    max-width: 415px;
     height: 50px;
     margin-bottom: 30px;
     background: #fff;
@@ -90,7 +90,7 @@
 
 
 input{  
-    width: 415px;
+    max-width: 415px;
     height: 50px;
     margin-bottom: 30px;
     background: #fff;
@@ -100,7 +100,7 @@ input{
 
 
 .member_main .send{  
-    width: 415px;
+    max-width: 415px;
     height: 50px;
     margin-bottom: 30px;
     
@@ -124,8 +124,6 @@ input{
 }
 
 .member_login span{
-    
-
     font-family: Noto Sans TC;
     font-style: normal;
     font-weight: 350;
@@ -140,7 +138,6 @@ input{
 
 
 ::placeholder{
-
     padding-left: 10px;
     font-family: Noto Sans TC;
     font-style: normal;
@@ -157,7 +154,6 @@ input{
 
 /* 使用條款&隱私政策 */
 .member_login span a{
-   
     text-decoration: none;
     font-family: Noto Sans TC;
     font-style: normal;
@@ -178,11 +174,9 @@ input{
 
 
 .social_log a{
-
-    width: 200px;
+    max-width: 200px;
     height: 65px;
    
-  
     text-align: center;
     /* 未選中的篩選列 */
     font-family: Noto Sans TC;

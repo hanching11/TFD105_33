@@ -2,10 +2,13 @@
     width: 100%;
 }
 /*-----------------------------------主選單--------------------------------  */
-.nav li a:nth-child(3){
-    padding-bottom: 10px;
-    border-bottom: 1px solid #042D41;
+
+.nav_list li a:nth-child(3){
+    border-bottom: 1px solid #23718A;
 }
+
+
+
 
 article{
     background: linear-gradient(345.2deg, #9BDED9 -27.3%, rgba(139, 187, 183, 0) 59.36%);
