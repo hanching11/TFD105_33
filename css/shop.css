@@ -49,6 +49,7 @@
 
 /*-----------------------------------商品帳單資訊------------------------------  */
 .shop_listAll{
+    
     position: relative;
     background: rgba(139, 187, 183, 0.1);
 }
@@ -57,6 +58,7 @@
 .shop_list_main{
     max-width: 1064px;
     margin: 0 auto;
+    padding: 0 20px;
     margin-top: 100px;
     padding-bottom: 670px;
     /* border: 1px solid rgb(8, 31, 163); */
@@ -67,6 +69,7 @@
 
 /*-----------------------------------商品帳單資訊_清單------------------------------  */
 .shop_list_tab{
+    position: relative;
     width: 100%;
     margin: 0 auto;
      /* 深藍綠 */
@@ -86,7 +89,7 @@
     /* 深靛藍 */
     color: #042D41;
      /* 底橫列淺藍綠 */ 
-    border-bottom:0.5px solid #8BBBB7;;
+    border-bottom:0.5px solid #8BBBB7;
     /* border: 2px solid rgb(237, 241, 5);   */
 }
 
@@ -132,7 +135,7 @@
 
 .list_t1 ol:nth-child(3){
     padding: 0px;
-    width: 200px;
+    max-width: 200px;
     /* border: 2px solid rgb(5, 194, 241);   */
  }
 
@@ -155,11 +158,9 @@
 }
 
 
-
-
-
 .shop_list{
     /* 底橫列淺藍綠 */ 
+    /* display: flex; */
     border-bottom:0.5px solid #8BBBB7;;
 }
 
@@ -249,8 +250,46 @@ td{
 /* 加入收藏 */
 
 
-@media (max-width: 575.98px){
+@media (max-width: 990px){
+   /* 標題:價格&小計 */
+    .shop_list_title td{
+        padding: 0px;
+        /* border: 2px solid rgb(80, 23, 75);   */
+    }
+
+    /* 標題:價格&小計 */
+    .shop_list_title td:nth-last-child(-n+2){
+        padding-left: 40px;
+        /* border: 2px solid rgb(80, 23, 75);   */
+    }
+       /* 數量 */
+    .shop_list td:nth-child(2){
+        /* display: inline-block; */
+        /* display: block; */
+        margin: 0 auto;
+        margin-bottom: 30px;
+        height: 100%;
+        /* border: 1px inset rgb(19, 46, 43);   */
+    }
+
+    /* 單價 */
+    .shop_list td:nth-child(3){
+        padding-left: 40px;
+        /* border: 2px solid rgb(52, 241, 5);   */
+    }
+    
+    /* 小計價格 */
+    .shop_list td:nth-last-child(2){
+        padding-left: 30px;
+        /* border: 2px solid rgb(9, 5, 241);   */
+    }
+     
+    
+}
+
+@media (max-width: 740px){
     .shop_list{
+        display: block;
         position: relative;
           /* border: 2px solid rgb(5, 194, 241);   */
     }
@@ -260,7 +299,7 @@ td{
         position: relative;
         padding: 0px;
         padding-bottom: 55px;
-        width: 200px;
+        max-width: 200px;
         /* border: 2px solid rgb(5, 194, 241);   */
      }
 
@@ -279,7 +318,7 @@ td{
     .shop_list td:nth-child(3){
         position: absolute;
         left: 170px; 
-        top: 80px;
+        top: 75px;
         display: block;
         padding-left: 0px;
         height: 20px;
@@ -291,6 +330,10 @@ td{
     .shop_list_title{
       display: none;
         /* border: 2px solid rgb(237, 241, 5);   */
+    }
+
+    .shop_list{
+        border-top:0.5px solid #8BBBB7;
     }
 
     /* 小計價格 */
@@ -312,7 +355,7 @@ td{
         position: absolute;
         right: 0%;
         top: 0%;
-        display: block;
+        /* display: block; */
         width: 40px;
         height: 40px;
         padding-right: 0px;
@@ -329,27 +372,30 @@ td{
         /* border: 2px solid rgb(241, 186, 5);   */
     }
 
+    .ctrl {
+        width: 80px;
+        /* border: 3px solid rgb(5, 166, 241);   */
+    }
+
+    .ctrl__counter {
+        font-size: 14px;
+        line-height: 30px;
+        height: 30px;
+        /* border: 3px solid rgb(5, 166, 241);   */
+    }
+
+    .ctrl__button {
+        font-size: 20px;  
+        line-height: 30px;
+        /* border: 3px solid rgb(5, 166, 241);   */
+      }
+
+    .ctrl__counter-num {
+        line-height: 30px;
+        /* border: 3px solid rgb(5, 166, 241);   */
+    }
+
 }
-
-
-
-/*-----------------------------------商品帳單資訊_清單------------------------------  */
-
-/* 數量下拉選單 */
-/* select.form-control {
-    width: 100px;
-    height: 45px;
-    border: none;
-    font-family: Noto Sans TC;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.25em;
-    text-align: center;
-    color: #042D41;
-} */
-
 
 
 
@@ -359,7 +405,7 @@ td{
     margin-top: 20px;
     margin-left: auto;
     
-    /* border: 2px solid rgb(52, 241, 5);   */
+    /* border: 2px solid rgb(5, 40, 241);   */
 }
 
 .shop_list_Alltotal tr{
@@ -368,8 +414,6 @@ td{
 }
 
 .shop_list_Alltotal td:first-child{
-    /* 選中的篩選列 */
-
     font-family: Noto Sans TC;
     font-style: normal;
     font-weight: 500;
@@ -384,7 +428,7 @@ td{
 
 
 
-/* 運費 */
+/* 免運費 */
 .shop_list_main p{
     margin-left: auto;
     width: 200px;
@@ -392,11 +436,9 @@ td{
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    /* identical to box height, or 214% */
     letter-spacing: 0.25em;
 
     /* 深靛藍 */
-
     color: #042D41;
     /* border: 2px solid rgb(13, 27, 135);   */
 }
@@ -429,8 +471,8 @@ td{
     margin: 55px 0 25px 0;
     display: block;
     text-decoration: none;
-    Width:200px;
-    Height :47px;
+    max-Width:200px;
+    Height :45px;
     background: #042D41;
 
     font-family: Noto Sans TC;
@@ -454,6 +496,7 @@ td{
     letter-spacing: 0.25em;
     /* 深靛藍 */
     color: #042D41;
+     /* border: 2px solid rgb(57, 143, 36); */
 }
 
 
@@ -467,7 +510,7 @@ td{
 
 .sale{
     margin-right: 10px;
-    width: 305px;
+    /* width: 305px; */
     height: 50px;
     border: none;
 
@@ -499,7 +542,7 @@ td{
 
 
 .re_new{
-    Width:80px;
+    max-Width:80px;
     Height:50px;
     text-align: center;
     background: rgba(4, 45, 65, 0.5);
@@ -518,7 +561,47 @@ td{
     color: #FFFFFF;
 }
 
+@media (max-width: 575.98px){
+    .sale_all{
+      padding: 10px;
+      top: 620px;
+       
+        /* border: 2px solid rgb(57, 143, 36); */
+    }
 
+    /* 代碼輸入框 */
+    .sale{
+        height: 30px;
+         /* border: 2px solid rgb(57, 143, 36); */
+    }
+
+    .re_new{
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .shop_list_Alltotal{
+        margin-right: 10px;
+        margin-top: 80px; 
+        /* border: 2px solid rgb(52, 241, 5);   */
+    }
+
+    .shop_list_main p{
+        margin-right: 10px;
+    }
+
+    /* 下一步 */
+    .next{
+    margin-right: 10px;
+    float: right;
+    /* border: 2px solid rgb(13, 27, 135);   */
+    }
+
+
+   
+    
+}
 
 
 
