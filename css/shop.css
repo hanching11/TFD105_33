@@ -49,6 +49,7 @@
 
 /*-----------------------------------商品帳單資訊------------------------------  */
 .shop_listAll{
+    position: relative;
     background: rgba(139, 187, 183, 0.1);
 }
 
@@ -154,49 +155,6 @@
 }
 
 
-@media (max-width: 575.98px){
-    .shop_list{
-        position: relative;
-          /* border: 2px solid rgb(5, 194, 241);   */
-    }
-
-    /* 商品名稱 */
-    .list_t1 ol:nth-child(3){ 
-        /* position: relative;  */
-        padding: 0px;
-        padding-bottom: 55px;
-        width: 200px;
-        /* border: 2px solid rgb(5, 194, 241);   */
-     }
-
-    /* 數量 */
-    .shop_list td:nth-child(2){
-        display: block;
-        height: 100%;
-        /* border: 1px inset rgb(19, 46, 43);   */
-    }
-     
-    /* 單價 */
-    .shop_list td:nth-child(3){
-        position: absolute;
-        left: 27%;
-        top: 40%;
-        padding-left: 0px;
-        height: 20px;
-        font-size: 14px;
-
-        /* border: 2px solid rgb(52, 241, 5);   */
-    }
-
-    .shop_list_title{
-      display: none;
-        border: 2px solid rgb(237, 241, 5);  
-    }
-
-}
-
-
-
 
 
 
@@ -205,9 +163,10 @@
     border-bottom:0.5px solid #8BBBB7;;
 }
 
-
+/* 加入收藏 */
 .list_t1 .like img{
     padding-right: 10px;
+      /* border: 2px solid rgb(80, 23, 75);   */
 }
 
 
@@ -245,10 +204,7 @@ td{
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    
-    /* identical to box height */
     letter-spacing: 0.2em;
-
     /* 深靛藍 */
     color: #042D41;
     /* border: 2px solid rgb(9, 5, 241);   */
@@ -291,6 +247,90 @@ td{
    /* border: 2px solid rgb(52, 241, 5);   */
 }
 /* 加入收藏 */
+
+
+@media (max-width: 575.98px){
+    .shop_list{
+        position: relative;
+          /* border: 2px solid rgb(5, 194, 241);   */
+    }
+
+    /* 商品名稱 */
+    .list_t1 ol:nth-child(3){ 
+        position: relative;
+        padding: 0px;
+        padding-bottom: 55px;
+        width: 200px;
+        /* border: 2px solid rgb(5, 194, 241);   */
+     }
+
+    /* 數量 */
+    .shop_list td:nth-child(2){
+        /* display: inline-block; */
+        /* display: flex; */
+        display: block;
+        margin-left: 60px;
+        margin-bottom: 30px;
+        height: 100%;
+        /* border: 1px inset rgb(19, 46, 43);   */
+    }
+     
+    /* 單價 */
+    .shop_list td:nth-child(3){
+        position: absolute;
+        left: 170px; 
+        top: 80px;
+        display: block;
+        padding-left: 0px;
+        height: 20px;
+        width: 100px;
+        font-size: 14px;
+        /* border: 2px solid rgb(52, 241, 5);   */
+    }
+
+    .shop_list_title{
+      display: none;
+        /* border: 2px solid rgb(237, 241, 5);   */
+    }
+
+    /* 小計價格 */
+    .shop_list td:nth-last-child(2){
+        /* display: inline-block; */
+        position: absolute;
+        right: 5%;
+        bottom: 20%;
+        text-align: end;
+        padding-left: 0px;
+        height: 20px;
+        font-size: 16px;
+        width: 100px;
+        /* border: 2px solid rgb(9, 5, 241);   */
+    }
+
+    /* 垃圾桶 */
+    .shop_list td:last-child{
+        position: absolute;
+        right: 0%;
+        top: 0%;
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding-right: 0px;
+        padding-left: 0px;
+        /* border: 2px solid rgb(241, 186, 5);   */
+    }
+
+    .shop_list .del a{
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        color: #8BBBB7;
+        /* border: 2px solid rgb(241, 186, 5);   */
+    }
+
+}
+
 
 
 /*-----------------------------------商品帳單資訊_清單------------------------------  */
@@ -479,18 +519,6 @@ td{
 }
 
 
-
-
-
-
-
-
-/* --------------------------------底部區塊-------------------------------- */
-footer{
-    width: 1277px;
-    margin: 61px auto 0;
-    /* border: 1px solid black; */
-}
 
 
 
