@@ -222,9 +222,15 @@ td{
     line-height: 40px;
     text-align: center;
     font-size: 20px;
-    color: #042D41;
+    color: #8BBBB7;
      /* border: 2px solid rgb(241, 186, 5);   */
 }
+
+.shop_list .del a:hover{
+    color: #bf6767;
+}
+
+
 
 
 /* 加入收藏 */
@@ -368,7 +374,7 @@ td{
         line-height: 40px;
         text-align: center;
         font-size: 20px;
-        color: #8BBBB7;
+        
         /* border: 2px solid rgb(241, 186, 5);   */
     }
 
