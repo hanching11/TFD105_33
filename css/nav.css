@@ -58,9 +58,7 @@
     padding-bottom: 5px;
   }
 
-  .nav_list a:hover{
-    border-bottom: 1px solid #23718A;
-  }
+ 
 
 
   nav.out_nav li a{
@@ -163,8 +161,20 @@
     .main_nav{
       display: none;
     }
+
+    .main_nav:hover{
+      box-shadow: 0px 15px 15px rgba(155, 222, 217, 0.2);
+    }
     button.hamburger, .out_nav a:nth-child(n+2){
       display: inline-block;
+    }
+
+    
+
+    .nav_list li{
+      padding-bottom: 15px;
+      margin: 50px;
+      border-bottom: .5px solid #add5d1;
     }
 
     nav.out_nav{
@@ -192,10 +202,6 @@
       /* border: 1px solid rgb(103, 122, 42); */
     }
 
-    .nav_list li{ 
-      text-align: center;
-      margin: 70px 0;
-    }
   }
 
 
