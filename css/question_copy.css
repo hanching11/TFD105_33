@@ -6,8 +6,16 @@
   color: #8BBBB7;
   padding-right: 5px;
 }
-body{
-  /* background: linear-gradient(358.48deg, #8BBBB7 -36.45%, rgba(155, 222, 217, 0.510559) -36.45%, rgba(139, 187, 183, 0) 32.68%); */
+.container{
+  
+  width: 100%;
+  background: linear-gradient(358.48deg, #8BBBB7 -36.45%, rgba(155, 222, 217, 0.510559) -36.45%, rgba(139, 187, 183, 0) 32.68%);
+}
+
+.row{
+  margin: 0 auto;
+  max-width: 650px;
+  /* border:  1px solid #000; */
 }
 
 .panel-title > a.collapsed:before {
@@ -21,8 +29,8 @@ body{
 }
 .panel-default > .panel-heading {
   background-color: rgba(139, 187, 183, 0.25);
-  color: #23718A;
-  padding: 20px 15px;
+  color: #042D41;
+  padding: 15px;
   border-bottom: 0px solid transparent;
   border-top-right-radius: 0px;
 
@@ -59,15 +67,9 @@ body{
   
 }
 .jumbotron {
-  
+  background: #ffffff;
   padding: 0;
-  /* padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit; */
-  /* background-color: #00bcd4; */
-  text-align: center;
-  color: #fff;
+ 
 }
 
 
