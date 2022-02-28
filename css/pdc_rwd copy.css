@@ -79,7 +79,7 @@
         font-family: Noto Sans TC;
         font-style: normal;
         font-size: 18px;
-        line-height: 45px;
+        line-height: 4px;
         text-align: center;
         letter-spacing: 0.2em;
         color: #FFFFFF;
@@ -160,6 +160,7 @@
         }
   
         span.item_text{
+          
           flex-wrap: wrap;
           /* border: 2px solid rgb(165, 92, 92); */
         }

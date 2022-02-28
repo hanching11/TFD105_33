@@ -80,7 +80,7 @@
         font-family: Noto Sans TC;
         font-style: normal;
         font-size: 18px;
-        line-height: 50px;
+        line-height: 45px;
         text-align: center;
         letter-spacing: 0.2em;
         color: #FFFFFF;
@@ -140,21 +140,35 @@
       @media(max-width: 575.98px){
         main.product ul.item_list{
           margin: 0 auto;
-          max-width: 350px;
+          /* max-width: 350px; */
           /* border: 5px solid rgb(93, 92, 165); */
         }
           main.product ul.item_list li{
-        
+            width: calc((100% - 30px) / 2);
             margin: 0 auto;
-            width: 100%;
-            flex-basis: 300px;
-            margin-bottom: 100px;
+            /* width: 100%; */
+            /* flex-basis: 300px; */
         }
 
         main.product ul.item_list > li:nth-child(n){
           margin: 0 auto;
           margin-bottom: 100px;
         }
+
+        .item_list span{
+        flex-wrap: wrap;  
+       }
+
+        /* 價錢 */
+       .item_list span p{
+       font-size: 14px;
+       letter-spacing: 0.1em;
+       }
+
+       /* 商品名稱 */
+       .item_text a{
+        line-height: 40px;
+      }
         
       }
 
@@ -162,7 +176,7 @@
         main.product ul.item_list{
           margin: 0 auto;
           /* width: 400px; */
-          border: 5px solid rgb(93, 92, 165);
+          /* border: 5px solid rgb(93, 92, 165); */
         }
        
         main.product ul.item_list li{
@@ -182,8 +196,9 @@
         }
 
         main.product ul.item_list li{
+          width: calc((100% - 100px) / 2);
           margin: 0 auto;
-         flex-basis: 400px;
+         /* flex-basis: 400px; */
         }
         main.product ul.item_list > li:nth-child(n){
           margin: 0 auto;
