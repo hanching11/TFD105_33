@@ -68,7 +68,8 @@
     /* border: 1px solid black; */
 }
 
-li a:hover{
+.qa_list_index li a:hover{
+   
     /* 選中的篩選列 */
     font-family: Noto Sans TC;
     font-style: normal;
@@ -190,9 +191,6 @@ li a:hover{
     border: 0px solid transparent;
     -webkit-box-shadow: 0 0px 0px rgb(0 0 0 / 0%);
     box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%);
-  
-    
-  
     /* 內文 */
     font-family: Noto Sans TC;
     font-style: normal;
@@ -201,13 +199,19 @@ li a:hover{
     line-height: 24px;
     color: #23718A;
     text-align: left;
-    
-    
   }
+
   .jumbotron {
     background: #ffffff;
     padding: 0;
-   
+  }
+
+  .jumbotron p{
+      font-size: 14px;
+  }
+
+  .jumbotron a{
+      text-decoration: none;
   }
   
   
