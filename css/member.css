@@ -14,16 +14,16 @@
     /* border: 1px solid  #d4a41e; */
 }
 
-/* 註冊登入切換 */
+
 .member_login{
     margin: 0 auto;
-    /* width: 400px; */
+    width: 400px;
     margin-top: 144px;
     margin-bottom: 90px;
     /* border:4px solid  #23718A; */
 }
 
-
+/* 註冊登入切換頁籤 */
 .login{
     margin: 0 auto;
     margin-bottom: 90px;
@@ -64,12 +64,23 @@
 }
 
 
-/* 註冊標示維持 */
+
+/* 登入底線維持 */
 .login a:last-child{
     padding-bottom: 10px;
     /* 深靛藍 */
     border-bottom: 1.5px solid #042D41;
 }
+
+/* 註冊標示滑動 */
+.login a:hover{
+    padding-bottom: 10px;
+    text-decoration: none;
+    /* 深靛藍 */
+    border-bottom: 1.5px solid #042D41;
+}
+
+
 
 
 
@@ -93,6 +104,7 @@
 
 
 .member_main .send{  
+  
     width: 400px;
     height: 50px;
     margin-bottom: 30px;
@@ -105,14 +117,41 @@
     letter-spacing: 0.2em;
     color: #FFFFFF;
     background: #042D41;
-    /* border: 1px solid #042D41; */
+    border: 1px solid #042D41;
 }   
+
+
+.member_main .phone{  
+    width: 400px;
+    height: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 0.5px solid #31999D;
+}
+
+.member_main .address{
+    width: 400px;
+    height: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 0.5px solid #31999D;
+}
 
 
 
 .member_login li{
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    /* border: 1px solid #042D41; */
+}
+
+
+.member_login span:first-child{ 
+  
+    text-align: center;
+    /* border: 1px solid #042D41; */
 }
 
 .member_login span{
@@ -147,6 +186,58 @@
 }
 
 
+/* 使用條款&隱私政策 */
+.member_login span a{
+    text-decoration: none;
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    /* border: 1px solid #042D41; */
+}
+
+
+
+
+/* 社群帳號登入修改中*/
+.social_log{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.social_log a{
+    max-width: 200px;
+    height: 65px;
+   
+    text-align: center;
+    /* 未選中的篩選列 */
+    font-family: Noto Sans TC;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 65px;
+    letter-spacing: 0.2em;
+
+    /* 深靛藍 */
+    color: #042D41;
+    background-color: #FFFFFF;
+    color: #042D41;
+    border: .5px solid #042D41;  
+}
+
+.social_log a:before{
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    float: left;
+    background-image: url(../img/fb_log.svg);
+
+}
+  
+
 
 
 
@@ -154,9 +245,15 @@
     .member_login{
         width: 300px;
         margin: 0 auto;
-        margin-top: 144px;
-        margin-bottom: 90px;
+        margin-top: 100px;
+        margin-bottom: 40px;
         /* border: 1px solid  #23718A; */
+    }
+
+    /* 註冊登入切換頁籤 */
+    .login{
+        margin-bottom: 40px;
+        /* border: 1px solid  #9227b3; */
     }
 
     .member_main .email{  
@@ -183,8 +280,13 @@
 @media (max-width: 281px){
     .member_login{
         width: 230px;
-        
         /* border: 1px solid  #23718A; */
+    }
+
+      /* 註冊登入切換頁籤 */
+      .login{
+        width: 200px;
+        /* border: 1px solid  #9227b3; */
     }
 
     .login{
