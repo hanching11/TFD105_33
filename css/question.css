@@ -7,19 +7,20 @@
 
 /*-----------------------------------常見問答------------------------------  */
 .qa_list_All{
-    margin: 130px auto 0;
-    background: linear-gradient(358.48deg, #8BBBB7 -36.45%, rgba(155, 222, 217, 0.510559) -36.45%, rgba(139, 187, 183, 0) 32.68%);
+    /* margin: 130px auto 0; */
+    /* background: linear-gradient(358.48deg, #8BBBB7 -36.45%, rgba(155, 222, 217, 0.510559) -36.45%, rgba(139, 187, 183, 0) 32.68%); */
     
 }
 
 .qa_list_main{
-    width: 1440px;
+    /* width: 1440px;
     margin: 0 auto;
     padding-bottom: 200px;
-    position: relative;
+    position: relative; */
     /* border: 1px solid black; */
 }
 
+conta
 
 /* 問答索引 */
 .qa_list_index{
@@ -27,7 +28,7 @@
     margin: 0 160px;
     padding-left: 20px;
     position: absolute;
-    border-left: 1px solid  #23718A;
+    border-left: 1px solid #23718A;
 }
 
 .qa_list_index h3{
