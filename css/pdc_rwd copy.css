@@ -72,14 +72,14 @@
       main.product ul.item_list > li > a{
         display: block;
         text-decoration: none;
-        Width:140px;
-        Height :50px;
+        Width:100%;
+        Height :45px;
         background: #042D41;
     
         font-family: Noto Sans TC;
         font-style: normal;
         font-size: 18px;
-        line-height: 50px;
+        line-height: 45px;
         text-align: center;
         letter-spacing: 0.2em;
         color: #FFFFFF;
@@ -160,7 +160,6 @@
         }
   
         span.item_text{
-          
           flex-wrap: wrap;
           /* border: 2px solid rgb(165, 92, 92); */
         }

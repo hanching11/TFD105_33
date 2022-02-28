@@ -3,8 +3,8 @@
 }
 /*-----------------------------------主選單--------------------------------  */
 
-.nav_list li a:nth-child(3){
-    border-bottom: 1px solid #23718A;
+.nav_list .about{
+    border-bottom: 1px solid #042D41;
 }
 
 

@@ -2,8 +2,7 @@
 
 
 /*-----------------------------------主選單--------------------------------  */
-.nav li a:first-child{
-    padding-bottom: 10px;
+.nav_list .pdc{
     border-bottom: 1px solid #042D41;
 }
 
