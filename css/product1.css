@@ -84,6 +84,7 @@
 }
 
 
+
 .pdc01_list ol:first-child{
     display: flex;
     flex-wrap: wrap;
@@ -222,12 +223,34 @@
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 0.2em;
-
-    padding-left: 10.65px;
+    padding-left: 20px;
+    
 
     /* 深靛藍 */
     color: #042D41;
     /* border: 2px solid rgb(57, 143, 36); */
+}
+
+.pdc_img li{
+   position: relative;
+}
+/* 加入收藏 */
+.like i{
+    padding-right: 2px;
+      /* border: 2px solid rgb(80, 23, 75);   */
+}
+
+.like::before{
+    position: absolute;
+    left: 0px;
+    content: '';
+    display: block;
+    height: 12px;
+    width: 12px;
+
+    background-repeat: no-repeat;
+    background-image: url(../img/bookmark-regular.svg);
+    /* border: 2px solid rgb(80, 23, 75);   */
 }
 
 .pdc_img li{
