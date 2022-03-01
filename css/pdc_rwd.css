@@ -162,18 +162,18 @@
 
         .item_list span{
         flex-wrap: wrap;  
-       }
+        }
 
         /* 價錢 */
        .item_list span p{
        font-size: 14px;
        letter-spacing: 0.1em;
-       }
+        }
 
        /* 商品名稱 */
        .item_text a{
         line-height: 40px;
-      }
+        }
         
       }
 

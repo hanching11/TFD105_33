@@ -50,14 +50,16 @@
   }
 
   .nav_list a{
+    display: inline-block;
+    padding: 0;
     text-decoration: none;
-    text-align: center;
     font-size: 18px;
     color: #23718A;
     letter-spacing: 0.2em;
     padding-bottom: 5px;
   }
 
+ 
  
 
 
@@ -148,6 +150,7 @@
     ul.nav_list{
       /* background-color: #fff; */
       display: block;
+      /* border: 2px solid red; */
       
     }
    
@@ -174,6 +177,7 @@
     
 
     .nav_list li{
+      
       padding-bottom: 15px;
       margin: 50px;
       border-bottom: .5px solid #add5d1;

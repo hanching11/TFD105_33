@@ -97,7 +97,7 @@
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
-        line-height: 40px;
+        line-height: 20px;
         width: 100%;
         flex-grow: 1;
         letter-spacing: 0.2em;
@@ -115,27 +115,16 @@
         justify-content: space-between;
         /* border: 2px solid rgb(165, 92, 92); */
       }
-      .item_list span + p{
-        margin-bottom: 40px;
-
-        /* 內文 */
-        font-family: Noto Sans TC;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 30px;
-        letter-spacing: 0.25em;
-        /* border: 2px solid rgb(93, 92, 165); */
-      }
+      
 
 
       .item_list span p{
-        margin-bottom: 40px;
+   
          /* 價錢 */
         font-family: Noto Sans TC;
         font-style: normal;
         font-weight: 250;
-        font-size: 18px;
+        font-size: 14x;
         letter-spacing: 0.2em;
       }
 

@@ -165,10 +165,13 @@
   }
   .panel-title > a:hover, 
   .panel-title > a:active, 
-  .panel-title > a:focus  {
+  .panel-title > a{
+    display: block;
     text-decoration:none;
+    /* border:  1px solid #000; */
   }
   .panel-default > .panel-heading {
+  
     background-color: rgba(139, 187, 183, 0.25);
     color: #042D41;
     padding: 15px;
@@ -181,11 +184,12 @@
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.2em;
+    /* border:  1px solid #000; */
   
   }
+
   
-  
-  
+
   
   .panel {
     margin-bottom: 20px !important;
@@ -201,6 +205,7 @@
     line-height: 24px;
     color: #23718A;
     text-align: left;
+    /* border:  1px solid rgb(194, 91, 91); */
   }
 
   .jumbotron {
