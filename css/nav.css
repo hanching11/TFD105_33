@@ -98,7 +98,7 @@
 
 
   nav.main_nav{
-    height: 100vh;
+ 
     margin: 0 auto;
     background: linear-gradient(197.58deg, #9BDED9 -20.66%, #FFFFFF 72.97%);
     overflow: hidden;
@@ -160,6 +160,7 @@
   /* 行動版時，將按鈕顯示出來 */
   @media screen and (max-width: 767.98px){
     .main_nav{
+      height: 100vh;
       display: none;
     }
 
