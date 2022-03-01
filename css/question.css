@@ -5,6 +5,11 @@
     border-bottom: 1px solid #23718A;
   }
 
+@media screen and (max-width: 767.98px){
+  .nav_list .qa{
+        border-bottom: 0px solid #042D41;
+  }
+}
 
 
 /*-----------------------------------常見問答------------------------------  */

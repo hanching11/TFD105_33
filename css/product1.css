@@ -6,6 +6,12 @@
     border-bottom: 1px solid #042D41;
 }
 
+@media screen and (max-width: 767.98px){
+    .nav_list .pdc{
+        border-bottom: 0px solid #042D41;
+    }
+}
+
 /*-----------------------------------麵包屑------------------------------  */
 .filter{
     display: flex;
