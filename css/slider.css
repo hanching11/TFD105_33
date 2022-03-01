@@ -45,7 +45,7 @@ body{
 /* 3 */
 .txt{
 	position: absolute;
-	width: 290px;
+	max-width: 290px;
 	font-weight: 500;
 	color: #31999D;   
 	letter-spacing: 2px;

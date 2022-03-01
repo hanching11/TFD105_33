@@ -180,7 +180,7 @@
     /* identical to box height */
     letter-spacing: 0.2em;
     /* padding-top: 171px; */
-    width: 130px;
+    max-width: 130px;
     margin: 0 auto;
     
     margin-bottom: 37px ;
@@ -440,11 +440,7 @@
     background: rgba(139, 187, 183, 0.1);
      /* border: 1px solid rgb(202, 38, 38); */
 }
-section{
-    /* margin: 0 auto;
-    width: 100%;
-    border: 2px solid rgb(202, 38, 38); */
-}
+
 .ig_main h1{
     padding: 100px 0 52px 0;
 
@@ -508,7 +504,7 @@ section{
 
 
 .slider {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 

@@ -237,12 +237,15 @@
     width: 40px;
     height: 24px;
     display: inline-block;
-    position: relative; }
+    position: relative;
+    /* border: 1px solid #23718A; */
+   }
   
   .hamburger-inner {
     display: block;
     top: 50%;
     margin-top:-2px; }
+
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
       width: 24px;
       height: 3px;
