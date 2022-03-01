@@ -97,8 +97,9 @@
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
-        line-height: 26px;
-      
+        line-height: 40px;
+        width: 100%;
+        flex-grow: 1;
         letter-spacing: 0.2em;
 
         /* border: 1px solid green; */
@@ -106,6 +107,8 @@
 
       span.item_text{
         display: flex;
+        flex-wrap: wrap;
+       
         margin-top: 20px;
         margin-bottom: 25px;
         align-items: center;
@@ -127,6 +130,7 @@
 
 
       .item_list span p{
+        margin-bottom: 20px;
          /* 價錢 */
         font-family: Noto Sans TC;
         font-style: normal;

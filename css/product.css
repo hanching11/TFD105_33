@@ -129,6 +129,7 @@ article{
     /* padding: 100px 0 100px 0; */
     display: flex;
     width: 150px;
+    padding-bottom: 50px;
     
     justify-content: space-between;
     /* border: 2px solid rgb(57, 143, 36); */
