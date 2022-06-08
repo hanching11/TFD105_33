@@ -339,7 +339,7 @@ td{
     /* 單價 */
     .shop_list td:nth-child(3){
         position: absolute;
-        left: 190px; 
+        left: 170px; 
         top: 75px;
         display: block;
         padding-left: 0px;
