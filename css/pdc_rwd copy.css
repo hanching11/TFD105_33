@@ -65,7 +65,7 @@
       }
       
       main.product ul.item_list > li:nth-child(3n){
-        margin-right: 0;
+        /* margin-right: 0; */
       }
      
 
