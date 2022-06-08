@@ -110,6 +110,10 @@
     /* border: 2px solid rgb(241, 92, 5);   */
 }
 
+.list_t1 img{
+    width: 100px;
+}
+
 /* 商品名稱 */
 .list_t1 ol{
     display: flex;
@@ -335,7 +339,7 @@ td{
     /* 單價 */
     .shop_list td:nth-child(3){
         position: absolute;
-        left: 170px; 
+        left: 190px; 
         top: 75px;
         display: block;
         padding-left: 0px;
